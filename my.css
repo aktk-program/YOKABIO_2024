@@ -1,0 +1,89 @@
+/*html記述
+スクロールバーの有無で画面幅が変わって面倒だったので暫定ON*/
+html {
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+html::-webkit-scrollbar {
+  display: none;
+}
+
+/*body記述
+ナビバー被らないようにtopにマージン配置*/
+body {
+  margin-top: 56px;
+}
+
+/*ナブバー記述
+色変えやホバー時の挙動など変更*/
+.nav-tx {
+  color: #fff;
+  transition: all 0s 0s;
+  text-decoration: underline;
+  text-decoration-color: #e2e0e04f;
+  text-underline-offset: 0.4em;
+  --bs-navbar-active-color: #afb4db;
+}
+.nav-tx:link {
+  color: #fff;
+}
+.nav-tx:visited {
+  color: #fff;
+}
+.nav-tx:hover {
+  color: #afb4db;
+  text-decoration: underline;
+  text-decoration-thickness: 5px;
+}
+.nav-now {
+  color: #afb4db;
+  transition: all 0s 0s;
+  text-decoration: underline;
+  text-decoration-thickness: 5px;
+}
+.nav-now:hover {
+  color: #afb4db;
+  text-decoration: underline;
+  text-decoration-thickness: 5px;
+}
+
+/*ドロップダウンメニュー記述
+クリックなしで展開するようにするなど*/
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+.dropdown:hover > .dropdown-toggle {
+  color: #afb4db;
+  text-decoration: underline;
+  text-decoration-thickness: 5px;
+}
+.dropdown > .dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+  pointer-events: none;
+}
+
+/*各項目の下線設定*/
+.top-line {
+  --bs-border-color: #afb4db;
+  padding-top: 25px;
+}
+
+/*フッター*/
+.footer {
+  background-color: #333;
+  color: #fff;
+}
+
+/*文字を下線に近づける*/
+.title-margin {
+  position: relative;
+  bottom: 5px;
+}
+
+.stick {
+  position: sticky;
+  top: 50px;
+  z-index: -1;
+  position: -webkit-sticky;
+}
