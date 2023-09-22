@@ -12,7 +12,7 @@ html::-webkit-scrollbar {
 /*body記述
 ナビバー被らないようにtopにマージン配置*/
 body {
-  background-color: #afb4db;
+  background-color: #fff;
   margin-top: 56px;
 }
 
