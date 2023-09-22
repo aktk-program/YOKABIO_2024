@@ -1,5 +1,5 @@
 /*html記述
-スクロールバーの有無で画面幅が変わって面倒だったので暫定ON*/
+スクロールバーの有無で画面幅が変わって面倒だったので暫定スクロールバーOFF*/
 html {
   overflow-y: scroll;
   -ms-overflow-style: none;
