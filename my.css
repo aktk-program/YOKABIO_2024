@@ -12,6 +12,7 @@ html::-webkit-scrollbar {
 /*body記述
 ナビバー被らないようにtopにマージン配置*/
 body {
+  background-color: #afb4db;
   margin-top: 56px;
 }
 
@@ -83,7 +84,11 @@ body {
 
 .stick {
   position: sticky;
-  top: 50px;
+  top: 56px;
   z-index: -1;
   position: -webkit-sticky;
+}
+
+.above-contents {
+  z-index: 1;
 }
