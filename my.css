@@ -92,3 +92,6 @@ body {
 .above-contents {
   z-index: 1;
 }
+body {
+  font-family: "Noto Sans JP";
+}
