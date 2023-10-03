@@ -34,7 +34,7 @@ body {
   color: #00a551;
   transition: 0.2s;
   text-decoration: underline;
-  text-decoration-thickness: 3px;
+  text-decoration-thickness: 2px;
 }
 .nav-now {
   color: #00a551;
@@ -52,7 +52,7 @@ body {
   color: #00a551;
   transition: 0.2s;
   text-decoration: underline;
-  text-decoration-thickness: 3px;
+  text-decoration-thickness: 2px;
 }
 .dropdown > .dropdown-toggle:active {
   /*Without this, clicking will make it sticky*/
