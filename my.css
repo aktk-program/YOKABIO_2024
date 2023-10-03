@@ -19,10 +19,8 @@ body {
 色変えやホバー時の挙動など変更*/
 .nav-tx {
   color: #333;
-  transition: all 0s 0s;
-  text-decoration-color: #e2e0e04f;
   text-underline-offset: 0.4em;
-  --bs-navbar-active-color: #afb4db;
+  --bs-navbar-active-color: #00a551;
 }
 .nav-tx:link {
   color: #333;
