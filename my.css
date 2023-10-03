@@ -10,7 +10,7 @@ html::-webkit-scrollbar {
 }
 
 /*body記述
-ナビバー被らないようにtopにマージン配置*/
+画像とナビバー被らないようにtopにマージン配置*/
 body {
   background-color: #fff;
   margin-top: 56px;
@@ -72,7 +72,7 @@ body {
 
 /*フッター*/
 .footer {
-  background-color: #198754;
+  background-color: #00a551;
   color: #fff;
 }
 
@@ -94,5 +94,4 @@ body {
 }
 body {
   font-family: "Noto Sans JP";
-  font-size: 2rem;
 }
