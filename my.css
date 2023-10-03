@@ -12,41 +12,35 @@ html::-webkit-scrollbar {
 /*body記述
 画像とナビバー被らないようにtopにマージン配置*/
 body {
-  background-color: #fff;
   margin-top: 56px;
 }
 
 /*ナブバー記述
 色変えやホバー時の挙動など変更*/
 .nav-tx {
-  color: #fff;
+  color: #333;
   transition: all 0s 0s;
-  text-decoration: underline;
   text-decoration-color: #e2e0e04f;
   text-underline-offset: 0.4em;
   --bs-navbar-active-color: #afb4db;
 }
 .nav-tx:link {
-  color: #fff;
+  color: #333;
 }
 .nav-tx:visited {
   color: #fff;
 }
 .nav-tx:hover {
-  color: #afb4db;
+  color: #00a551;
+  transition: 0.2s;
   text-decoration: underline;
-  text-decoration-thickness: 5px;
+  text-decoration-thickness: 3px;
 }
 .nav-now {
-  color: #afb4db;
-  transition: all 0s 0s;
-  text-decoration: underline;
-  text-decoration-thickness: 5px;
+  color: #00a551;
 }
 .nav-now:hover {
-  color: #afb4db;
-  text-decoration: underline;
-  text-decoration-thickness: 5px;
+  color: #00a551;
 }
 
 /*ドロップダウンメニュー記述
@@ -55,9 +49,10 @@ body {
   display: block;
 }
 .dropdown:hover > .dropdown-toggle {
-  color: #afb4db;
+  color: #00a551;
+  transition: 0.2s;
   text-decoration: underline;
-  text-decoration-thickness: 5px;
+  text-decoration-thickness: 3px;
 }
 .dropdown > .dropdown-toggle:active {
   /*Without this, clicking will make it sticky*/
