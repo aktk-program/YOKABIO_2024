@@ -75,11 +75,13 @@ body {
   bottom: 5px;
 }
 
+/*上部画像の固定*/
 .stick {
   position: sticky;
   top: 56px;
   z-index: -1;
-  position: -webkit-sticky;
+  background-color: #333;
+  opacity: 0.4;
 }
 
 .above-contents {
@@ -87,4 +89,42 @@ body {
 }
 body {
   font-family: "Noto Sans JP";
+}
+
+/* ラッパー（外側の要素） */
+.video-wrapper {
+  aspect-ratio: 16 / 9; /* 縦横比（アスペクト比） */
+  overflow: hidden;
+  position: relative; /* 絶対配置するコンテンツや疑似要素の基準とする */
+  width: 100%;
+  max-width: 1600px;
+}
+
+/* 疑似要素でオーバーレイを表示 */
+.video-wrapper::before {
+  content: "";
+  position: absolute; /* 絶対配置 */
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: rgba(9, 2, 108, 0.15);
+}
+
+/* video 要素 */
+.video-wrapper video {
+  width: 100%; /* 明示的に幅を設定（必須） */
+  height: 100%; /* 明示的に高さを設定（必須） */
+  object-fit: cover; /* コンテンツボックスに収まるように拡大縮小 */
+}
+
+.video-content {
+  margin: 0;
+  position: absolute; /* 絶対配置 */
+  top: 53%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
 }
