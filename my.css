@@ -81,7 +81,7 @@ body {
   top: 56px;
   z-index: -1;
   background-color: #333;
-  opacity: 0.4;
+  opacity: 0.6;
 }
 
 .above-contents {
@@ -93,11 +93,11 @@ body {
 
 /* ラッパー（外側の要素） */
 .video-wrapper {
-  aspect-ratio: 16 / 9; /* 縦横比（アスペクト比） */
+  /*aspect-ratio: 16 / 9; /* 縦横比（アスペクト比） */
   overflow: hidden;
   position: relative; /* 絶対配置するコンテンツや疑似要素の基準とする */
   width: 100%;
-  max-width: 1600px;
+  max-width: 100%;
 }
 
 /* 疑似要素でオーバーレイを表示 */
@@ -115,7 +115,8 @@ body {
 .video-wrapper video {
   width: 100%; /* 明示的に幅を設定（必須） */
   height: 100%; /* 明示的に高さを設定（必須） */
-  object-fit: cover; /* コンテンツボックスに収まるように拡大縮小 */
+  object-fit: contain; /* コンテンツボックスに収まるように拡大縮小 */
+  display: block;
 }
 
 .video-content {
@@ -127,4 +128,26 @@ body {
   transform: translate(-50%, -50%);
   color: #fff;
   text-align: center;
+}
+
+#content .video-content h2 {
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  text-shadow: 2px 2px 2px #444;
+  color: #fff;
+}
+
+.video-content p {
+  max-width: 600px;
+  padding: 0 2rem;
+}
+
+@media screen and (max-width: 480px) {
+  .video-wrapper {
+    aspect-ratio: 1 / 1;
+  }
+  .video-content {
+    top: 38%;
+    margin-top: 1rem;
+  }
 }
