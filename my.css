@@ -13,6 +13,7 @@ html::-webkit-scrollbar {
 画像とナビバー被らないようにtopにマージン配置*/
 body {
   margin-top: 56px;
+  font-family: "Noto Sans JP";
 }
 
 /*ナブバー記述
@@ -100,10 +101,6 @@ body {
 .above-contents {
   z-index: 1;
 }
-body {
-  font-family: "Noto Sans JP";
-}
-
 /* ラッパー（外側の要素） */
 .video-wrapper {
   /*aspect-ratio: 16 / 9; /* 縦横比（アスペクト比） */
