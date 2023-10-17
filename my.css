@@ -53,6 +53,7 @@ body {
   text-decoration: underline;
   text-decoration-thickness: 2px;
 }
+
 .dropdown > .dropdown-toggle:active {
   /*Without this, clicking will make it sticky*/
   pointer-events: none;
