@@ -82,12 +82,14 @@
                 Design
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="design.html">仮置き</a></li>
                 <li>
-                  <a class="dropdown-item" href="design.html">仮置き</a>
+                  <a class="dropdown-item" href="design.html">構造 </a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="design.html">仮置き</a>
+                  <a class="dropdown-item" href="design.html">開閉機構</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="design.html">メカニズム</a>
                 </li>
               </ul>
             </li>
@@ -103,13 +105,19 @@
               </a>
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" href="simulation.html">仮置き</a>
+                  <a class="dropdown-item" href="simulation.html"
+                    >中間体の剛性シミュレーション
+                  </a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="simulation.html">仮置き</a>
+                  <a class="dropdown-item" href="simulation.html"
+                    >鎖置換のDNA濃度シミュレーション
+                  </a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="simulation.html">仮置き</a>
+                  <a class="dropdown-item" href="simulation.html"
+                    >8頂点状態/6頂点状態の剛性シミュレーション
+                  </a>
                 </li>
               </ul>
             </li>
@@ -125,13 +133,22 @@
               </a>
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" href="experiment.html">仮置き</a>
+                  <a class="dropdown-item" href="experiment.html"
+                    >中間体の生成</a
+                  >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="experiment.html">仮置き</a>
+                  <a class="dropdown-item" href="experiment.html"
+                    >鎖置換の実証</a
+                  >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="experiment.html">仮置き</a>
+                  <a class="dropdown-item" href="experiment.html">変形の確認</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="experiment.html"
+                    >Material &amp; Methods</a
+                  >
                 </li>
               </ul>
             </li>
@@ -166,7 +183,7 @@
       <div class="row">
         <div class="col-md-2"></div>
         <div class="col-md-8">
-          <div class="fw-bold fs-4 mt-4 title-margin">セクション1</div>
+          <div class="fw-bold fs-4 mt-4 title-margin">構造</div>
         </div>
         <div class="col-md-2"></div>
       </div>
@@ -176,7 +193,15 @@
         <div
           class="col-md-8 text-break mb-2 d-block justify-content-center border-top border-2 top-line"
         >
-          本文
+          我々は六頂点構造と8頂点構造の中間の構造としてDNAorigamiの技術を用いて菱形十二面体のワイヤフレーム構造を作成した。この構造の辺は二本鎖DNAを4本束ねた4Helixbundleによって構成されている。また、辺同士はstaple鎖またはscaffold鎖によって接続されている。
+          <br /><br />
+          【画像】Cadnanoで作成した構造体をoxViewer上で成形したもの。<br />
+          この構造には14の頂点が存在する。4つの辺から構成される頂点（Vertex
+          Group A）が6つ、3つの辺から構成される頂点(Vertex Group
+          B)が8つ存在する。
+          頂点グループA,Bのいずれかが閉じることでもう一方の頂点グループが構造の内側に落ち込んで異なる頂点数を持つ構造が現れる。
+          <br /><br />
+          【画像】ストローで作成した構造体のモデル。赤のテープでマークされた頂点がグループAを示し、青のテープでマークされた頂点がグループBを示す。
         </div>
         <div class="col-md-2"></div>
       </div>
@@ -187,7 +212,7 @@
       <div class="row">
         <div class="col-md-2"></div>
         <div class="col-md-8">
-          <div class="fw-bold fs-4 mt-4 title-margin">セクション2</div>
+          <div class="fw-bold fs-4 mt-4 title-margin">開閉機構</div>
         </div>
         <div class="col-md-2"></div>
       </div>
@@ -197,7 +222,11 @@
         <div
           class="col-md-8 text-break mb-2 d-block justify-content-center border-top border-2 top-line"
         >
-          本文
+          次に上記の菱形十二面体のワイヤ―フレーム構造の頂点の開閉を行うための機構を実装した。
+          機構はそれぞれの辺に取り付けられたssDNA(名前),
+          ssDNA同士をつなぎ合わせて頂点を閉じるためのシグナルDNA（close-DNA）,
+          ssDNA同士のつなぎ合わせを解除するためのシグナルDNA（open-DNA）から構成されている。また、closeDNAには頂点グループAを閉じるためのcloseA-DNA,
+          頂点グループBを閉じるためのopenB-DNAの二種類が存在する。（DNAの呼び方を決めるべきである。）
         </div>
         <div class="col-md-2"></div>
       </div>
@@ -208,7 +237,7 @@
       <div class="row">
         <div class="col-md-2"></div>
         <div class="col-md-8">
-          <div class="fw-bold fs-4 mt-4 title-margin">セクション3</div>
+          <div class="fw-bold fs-4 mt-4 title-margin">メカニズム</div>
         </div>
         <div class="col-md-2"></div>
       </div>
@@ -218,7 +247,12 @@
         <div
           class="col-md-8 text-break mb-2 d-block justify-content-center border-top border-2 top-line"
         >
-          本文
+          Close-DNAを加えると、シグナルDNAが隣り合う辺同士の開閉機構を橋渡しするように二重鎖を形成して、隣り合う辺同士が引き寄せられることで頂点が閉じる。このようにして頂点グループA,Bの一方が閉じることでもう一方の頂点グループに所属する頂点が落ち込み異なる頂点数の構造を形成する。
+          <br /><br />
+          【画像】開閉機構がどの様に閉じるのかを解説する図<br />
+          上記のように一部の頂点が閉じた構造にopen-DNAを加えると、open-DNAとclose-DNAが二重鎖を形成することで、開閉機構ssDNAからclose-DNAが取り除かれ、頂点が開く。頂点が開いたDNAは再びclose-DNAを入れることで六頂点または八頂点の構造に変化することが出来る。
+          <br /><br />
+          【画像】開閉機構がどの様に開くのかを解説する図
         </div>
         <div class="col-md-2"></div>
       </div>
