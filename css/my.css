@@ -1,16 +1,3 @@
-/*
-overview
-construction
-analysis
-materials&methods
-.dropdown:hover .dropdown-menu {
-  display: block;
-}
-.dropdown > .dropdown-toggle:active {
-  pointer-events: none;
-}
-*/
-
 /*html記述
 スクロールバーの有無で画面幅が変わって面倒だったので暫定スクロールバーOFF*/
 html {
