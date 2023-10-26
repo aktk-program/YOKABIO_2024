@@ -217,6 +217,12 @@ model-viewer {
   height: 90%;
 }
 
+/*リンク色変えなし*/
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 @media screen and (max-width: 480px) {
   .video-wrapper {
     aspect-ratio: 1 / 1;
