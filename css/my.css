@@ -256,7 +256,7 @@ a {
 }
 
 /*ボタン設定*/
-button {
+.edit-button {
   border: 0;
   background-color: #fff;
   width: 100px;
