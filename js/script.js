@@ -2,12 +2,20 @@ var aElement = document.getElementById("a");
 aElement.style.display = "none"; // #aの要素を非表示にする
 var aElement = document.getElementById("c");
 aElement.style.display = "none"; // #aの要素を非表示にする
+var h_name = document.getElementById("home_name"); //名前取得
 var flag = 1;
 document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("leftbutton").addEventListener("click", function () {
     // a以外の全ての要素を非表示にする
     if (flag > 0 && flag <= 2) {
       flag -= 1;
+    }
+    if (flag == 0) {
+      h_name.textContent = "6 form";
+    } else if (flag == 1) {
+      h_name.textContent = "intermediate";
+    } else {
+      h_name.textContent = "8 form";
     }
     var elements = document.getElementsByClassName("element");
     for (var i = 0; i < elements.length; i++) {
@@ -27,6 +35,13 @@ document.addEventListener("DOMContentLoaded", function () {
     // a以外の全ての要素を非表示にする
     if (flag >= 0 && flag < 2) {
       flag += 1;
+    }
+    if (flag == 0) {
+      h_name.textContent = "6 form";
+    } else if (flag == 1) {
+      h_name.textContent = "intermediate";
+    } else {
+      h_name.textContent = "8 form";
     }
     var elements = document.getElementsByClassName("element");
     for (var i = 0; i < elements.length; i++) {

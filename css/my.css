@@ -255,6 +255,12 @@ a {
   z-index: 0;
 }
 
+/*ボタン設定*/
+button {
+  border: 0;
+  background-color: #fff;
+}
+
 @media screen and (max-width: 480px) {
   .video-wrapper {
     aspect-ratio: 1 / 1;
