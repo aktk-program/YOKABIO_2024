@@ -229,8 +229,8 @@ a {
 #simulation,
 #design {
   display: block;
-  padding-top: 70px;
-  margin-top: -70px;
+  padding-top: 60px;
+  margin-top: -60px;
 }
 
 .wide-box {
