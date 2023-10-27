@@ -259,6 +259,7 @@ a {
 button {
   border: 0;
   background-color: #fff;
+  width: 100px;
 }
 
 @media screen and (max-width: 480px) {
