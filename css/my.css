@@ -225,6 +225,14 @@ a {
   border-left: 4px solid #000;
 }
 
+/*スクロール先位置調整*/
+#simulation,
+#design {
+  display: block;
+  padding-top: 70px;
+  margin-top: -70px;
+}
+
 @media screen and (max-width: 480px) {
   .video-wrapper {
     aspect-ratio: 1 / 1;

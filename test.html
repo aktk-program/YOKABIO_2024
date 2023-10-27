@@ -15,7 +15,7 @@
         class="form-range"
         id="slider"
         min="0"
-        max="100"
+        max="2"
         step="1"
       />
       <div id="slider-value">Value: 0</div>
@@ -33,18 +33,109 @@
         sliderValue.innerText = `Value: ${currentValue}`;
 
         // 判定: AからBにスライド
-        if (currentValue > previousValue) {
+        if (currentValue == 1 && previousValue == 0) {
           // ここにAからBのアクションを追加
-          alert("AからBにスライド中");
+          console.log("0 to 1");
         }
         // 判定: BからAにスライド
-        else if (currentValue < previousValue) {
+        else if (currentValue == 1 && previousValue == 2) {
           // ここにBからAのアクションを追加
-          console.log("BからAにスライド中");
+          console.log("2 to 1");
+        } else if (currentValue == 2 && previousValue == 1) {
+          // ここにBからAのアクションを追加
+          console.log("1 to 2");
+        } else if (currentValue == 0 && previousValue == 1) {
+          // ここにBからAのアクションを追加
+          console.log("1 to 0");
         }
 
         previousValue = currentValue;
       });
+    </script>
+  </body>
+</html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* スクロール対象の要素にスタイルを追加 */
+      .scrollable {
+        height: 200px;
+        overflow-y: scroll;
+        border: 1px solid #ccc;
+      }
+
+      /* クリッカブルな要素にスタイルを追加 */
+      .clickable {
+        cursor: pointer;
+        color: blue;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="scrollable" id="scrollableDiv">
+      <!-- 長いコンテンツが入る要素 -->
+      <p>これは長いコンテンツです。</p>
+      <p>これは長いコンテンツです。</p>
+      <p>これは長いコンテンツです。</p>
+      <p>これは長いコンテンツです。</p>
+      <p>これは長いコンテンツです。</p>
+    </div>
+
+    <p class="clickable" onclick="scrollToBottom()">下へスクロール</p>
+
+    <script>
+      // 下へスクロールする関数
+      function scrollToBottom() {
+        var scrollableDiv = document.getElementById("scrollableDiv");
+        scrollableDiv.scrollTop = scrollableDiv.scrollHeight;
+      }
+    </script>
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* スクロール対象の要素にスタイルを追加 */
+      .scrollable {
+        height: 200px;
+        overflow-y: scroll;
+        border: 1px solid #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="scrollable" id="scrollableDiv">
+      <!-- 長いコンテンツが入る要素 -->
+      <p>これは長いコンテンツです。</p>
+      <p>これは長いコンテンツです。</p>
+      <p>これは長いコンテンツです。</p>
+      <p>これは長いコンテンツです。</p>
+      <p>これは長いコンテンツです。</p>
+      <p>これは長いコンテンツです。</p>
+      <p>これは長いコンテンツです。</p>
+      <p>これは長いコンテンツです。</p>
+      <p>これは長いコンテンツです。</p>
+    </div>
+
+    <!-- クリッカブルな要素をクリックすると指定した位置までスクロール -->
+    <p class="scrollToPosition">指定位置までスクロール</p>
+
+    <script>
+      // スクロールを行う関数
+      function scrollToPosition() {
+        var scrollableDiv = document.getElementById("scrollableDiv");
+        var scrollPosition = 500; // スクロールしたい位置（ピクセル単位で指定）
+
+        scrollableDiv.scrollTop = scrollPosition;
+      }
+
+      // クリッカブルな要素をクリックしたときにスクロールを実行
+      var scrollButton = document.querySelector(".scrollToPosition");
+      scrollButton.addEventListener("click", scrollToPosition);
     </script>
   </body>
 </html>
