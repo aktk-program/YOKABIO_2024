@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Slider Behavior</title>
+    <!-- Include Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <input
+        type="range"
+        class="form-range"
+        id="slider"
+        min="0"
+        max="100"
+        step="1"
+      />
+      <div id="slider-value">Value: 0</div>
+    </div>
+
+    <!-- Include Bootstrap JS and your custom JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script>
+      const slider = document.getElementById("slider");
+      const sliderValue = document.getElementById("slider-value");
+      let previousValue = 0;
+
+      slider.addEventListener("input", function () {
+        const currentValue = parseInt(slider.value);
+        sliderValue.innerText = `Value: ${currentValue}`;
+
+        // 判定: AからBにスライド
+        if (currentValue > previousValue) {
+          // ここにAからBのアクションを追加
+          alert("AからBにスライド中");
+        }
+        // 判定: BからAにスライド
+        else if (currentValue < previousValue) {
+          // ここにBからAのアクションを追加
+          console.log("BからAにスライド中");
+        }
+
+        previousValue = currentValue;
+      });
+    </script>
+  </body>
+</html>

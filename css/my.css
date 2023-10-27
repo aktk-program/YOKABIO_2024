@@ -219,6 +219,12 @@ a {
   text-decoration: none;
 }
 
+/*小セクション左線*/
+.hleft-line {
+  padding: 1rem 2rem;
+  border-left: 4px solid #000;
+}
+
 @media screen and (max-width: 480px) {
   .video-wrapper {
     aspect-ratio: 1 / 1;

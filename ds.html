@@ -128,24 +128,24 @@
         class="fs-4 mt-5 title-margin"
         style="text-align: center; padding-top: 1em"
       >
-        <p class="hline fw-bold">OVERVIEW</p>
+        <p class="hline fw-bold fs-1">OVERVIEW</p>
       </div>
       <div class="row mt-3">
         <div class="col-md-1"></div>
         <div class="col-md-5">
+          <img
+            src="./images/inter1.png"
+            class="img-fluid d-block mx-auto"
+            style="height: 390px"
+          />
           <a href="index.html">
-            <img
-              src="./images/inter1.png"
-              class="img-fluid d-block mx-auto"
-              style="height: 390px"
-            />
             <p class="ex-back ex-text fs-4" style="text-align: center">
               <img
                 src="./images/ya.png"
                 style="width: 30px; position: relative; bottom: 2px"
                 class="my-auto"
               />
-              Text
+              Design
               <img
                 src="./images/ya.png"
                 style="width: 30px; position: relative; bottom: 2px"
@@ -155,21 +155,21 @@
           </a>
         </div>
         <div class="col-md-5">
+          <model-viewer
+            alt="cat"
+            src="./images/1HB_4.glb"
+            auto-rotate
+            camera-controls
+            rotation-per-second="300%"
+          ></model-viewer>
           <a href="index.html">
-            <model-viewer
-              alt="cat"
-              src="./images/1HB_4.glb"
-              auto-rotate
-              camera-controls
-              rotation-per-second="300%"
-            ></model-viewer>
             <p class="ex-back ex-text fs-4" style="text-align: center">
               <img
                 src="./images/ya.png"
                 style="width: 30px; position: relative; bottom: 2px"
                 class="my-auto"
               />
-              Text
+              Simulation
               <img
                 src="./images/ya.png"
                 style="width: 30px; position: relative; bottom: 2px"
@@ -186,29 +186,203 @@
       <div class="row">
         <div class="col-md-1"></div>
         <div class="col-md-10">
-          <div class="fs-3 mt-5 title-margin">Construction</div>
+          <div class="fs-1 mt-3 title-margin fw-bold">Design<br /></div>
         </div>
         <div class="col-md-1"></div>
       </div>
 
       <div class="row">
         <div class="col-md-1"></div>
-        <div
-          class="col-md-10 fs-5 text-break mb-2 d-block justify-content-center border-top border-2 top-line"
-        >
-          [骨格]
+        <div class="col-md-10">
+          <div
+            class="fs-6 text-break mb-2 d-block justify-content-center border-top border-2 top-line"
+          >
+            我々はVertex-Switcherを、Cadnanoを用いて設計した。
+            <br />より詳しい説明は<a href="index.html"
+              >より詳しい説明は（SI Appendix, section1）</a
+            >
+          </div>
         </div>
         <div class="col-md-1"></div>
       </div>
+
+      <div class="row mb-4">
+        <div class="col-md-1"></div>
+        <div class="col-md-5">
+          <p class="fs-3 mt-3 hleft-line">
+            骨格その１ ワイヤーフレームDNA origami
+          </p>
+          Vertex-Switcherの基本構造は菱形十二面体である。菱形十二面体は、6頂点体および8頂点体の二つへ変形可能な中間体として捉えることができる。我々はこの中間体を、ワイヤーフレームDNA
+          origamiを用いて作成した。ワイヤーフレームDNA
+          origamiは1本の長いssDNA(scaffold)と多数の短いssDNA(staple)のハイブリダイゼーションによって構造を作る。我々の構造はコンピュータプログラムを使って設計された。[1]
+        </div>
+        <div class="col-md-5 text-break d-block">
+          <model-viewer
+            alt="cat"
+            src="./images/1HB_4.glb"
+            auto-rotate
+            camera-controls
+            rotation-per-second="300%"
+          ></model-viewer>
+          <p style="text-align: center">Fig.1 菱形十二面体</p>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+
+      <div class="row mb-4">
+        <div class="col-md-1"></div>
+        <div class="col-md-5">
+          <p class="fs-3 mt-3 hleft-line">骨格その2 4helix Bundle</p>
+          溶液中で安定して形を保つために、剛直な構造にする必要がある。我々はそれぞれの辺を構成するDNAを、4Helix
+          Bundleにすることで剛直性を確保した。[1]
+          4つのHelixがクロスオーバーによって平行に繋がることでそれぞれの辺が強化される。4Helix
+          Bundleもコンピュータプログラムを使って設計された。
+        </div>
+        <div class="col-md-5">
+          <img src="./images/dsfig2.png" class="img-fluid w-100" />
+          <p style="text-align: center">Fig.2 4 Helix Bundle</p>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+
       <div class="row">
         <div class="col-md-1"></div>
         <div class="col-md-5">
-          <p class="fs-5">ワイヤーフレーム</p>
-          仮置き文章仮置き文章仮置き文章仮置き文章仮置き文章仮置き文章仮置き文章仮置き文章仮置き文章仮置き文章仮置き文章
-          <br />仮置き文章<br />仮置き文章<br />仮置き文章<br />仮置き文章<br />仮置き文章<br />仮置き文章<br />仮置き文章<br />仮置き文章<br />仮置き文章<br />仮置き文章<br />
+          <p class="fs-3 mt-3 hleft-line">変形その1 鎖置換</p>
+          中間体から別状態へ変形させるために、特定の角を絞る機構が必要である。我々は鎖置換の仕組みを利用した。[2]
+          それぞれの辺から飛び出すようにssDNA(fastening-DNA)を伸ばす。向かい合う二辺のfastening-DNAと結合するssDNA(close-DNA)を加えることで特定の角が絞られ、別状態への変形が起きる。close-DNAと結合するssDNA(open-DNA)を加えると角が解放され、中間体に戻る。。
+        </div>
+        <div class="col-md-5">
+          <img src="./images/dsfig3.png" class="img-fluid w-100" />
+          <p style="text-align: center">Fig.3 鎖置換</p>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+
+      <div class="row pb-3" style="background-color: #f0fff0">
+        <div class="col-md-1"></div>
+        <div class="col-md-5">
+          <p class="fs-3 mt-3 hleft-line">変形その2 ヒンジの延長</p>
+          辺どうしを近づけるためには、辺をつなぐヒンジ部分の長さを延長して可動性を上げる必要がある。我々の計算によると、辺によってできる角を30度まで絞るために最低限必要なヒンジの長さはssDNA
+          5ntにほぼ等しかった。[3]
+          これを参考に最適なヒンジ長を探るため、3パターンの構造体を作成した。ヒンジ部分が3nt(デフォルト)、6nt(最低限)、10nt（余裕あり）の3つである。
+        </div>
+        <div class="col-md-5">
+          <img src="./images/dsfig4.png" class="img-fluid w-100" />
+          <p style="text-align: center">Fig.4 ヒンジの延長</p>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+    </div>
+
+    <div class="container-fluid" style="background-color: #f0fff0">
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <div class="fs-1 mt-3 title-margin fw-bold">Simulation<br /></div>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <div
+            class="fs-6 text-break mb-2 d-block justify-content-center border-top border-2 top-line"
+          >
+            設計した構造が妥当かどうかシミュレーションによって確認した。シミュレーションにはoxDNAとNUPACKを用いた。
+            <br />より詳しい説明は<a href="index.html"
+              >（SI Appendix, section2）</a
+            >
+          </div>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+
+      <div class="row mb-2">
+        <div class="col-md-1"></div>
+        <div class="col-md-5">
+          <p class="fs-3 mt-3 hleft-line">中間体の剛性確認</p>
+          設計した中間体が安定して形を保つか、oxDNAを用いてMD
+          simulationを行ない、RMSFデータによりそれを評価した。RMSFは粒子の揺らぎの大きさを示す指標であり、小さい程構造が安定であると言える。RMSFの値によって色付けしたカラーマップをFig.5に示す。ヒンジの長さが長くなるほど粒子の揺らぎは大きくなるが、どれも概形は保たれており、一定以上の剛性があると言える。
         </div>
         <div class="col-md-5 text-break d-block">
-          <img src="./images/sp.jpg" class="img-fluid" />
+          <img src="./images/dsfig5.png" class="img-fluid w-100" />
+          <p style="text-align: center; margin-bottom: 0%">
+            Fig.5 中間体の安定性
+          </p>
+          <p style="font-size: 10px; text-align: center">
+            粒子の揺らぎの大きさをヒンジの長さごとに示す。<br />ヒンジの長さは、a)
+            3nt, b) 6nt, c) 10nt
+          </p>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+
+      <div class="row mb-2">
+        <div class="col-md-1"></div>
+        <div class="col-md-5">
+          <p class="fs-3 mt-3 hleft-line">鎖置換の確認</p>
+          設計した配列について、意図した鎖置換が起きるかNUPACKを使って検証した。6頂点体になるために絞る角と、8頂点体になるために絞る角は別の配列が用いられている。それぞれの4℃での最小自由エネルギー構造について検証した結果をFig.6に示す。自由エネルギー値より、どちらのclose-DNAについてもfastening-DNAと結合することができ、また、それよりさらに高い親和性でopen-DNAと結合することが推測できる。
+        </div>
+        <div class="col-md-5">
+          <img src="./images/dsfig6.png" class="img-fluid w-100" />
+          <p style="text-align: center; margin-bottom: 0%">
+            Fig.6 鎖置換の確認
+          </p>
+          <p style="font-size: 10px; text-align: center">
+            a) 6頂点体になるための鎖置換, b) 8頂点体になるための鎖置換
+          </p>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+
+      <div class="row pb-3" style="background-color: #f0fff0">
+        <div class="col-md-1"></div>
+        <div class="col-md-5">
+          <p class="fs-3 mt-3 hleft-line">6頂点体と8頂点体の剛性確認</p>
+          中間体は鎖置換によって6頂点体または8頂点体に変形する。それぞれの構造が安定して形を保つか、oxDNAを用いてMD
+          simulationを行ない、RMSFデータによりそれを評価した。RMSFの値によって色付けしたカラーマップをFig.7に示す。中間体と比べても安定した構造だと言える。時間の都合上、中間体の剛性確認の結果において最も不安定だったヒンジ10ntでの構造の安定性のみ確認した。
+        </div>
+        <div class="col-md-5">
+          <img src="./images/dsfig7.png" class="img-fluid w-100" />
+          <p style="text-align: center; margin-bottom: 0%">
+            Fig.7 変形後の安定性
+          </p>
+          <p style="font-size: 10px; text-align: center">
+            ヒンジ10ntの構造体について変形後の粒子の揺らぎの大きさを示す。<br />
+            a) 6頂点体, b) 8頂点体
+          </p>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+    </div>
+
+    <div class="container-fluid" style="background-color: #f0fff0">
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <div class="fs-1 mt-3 title-margin fw-bold">Refference<br /></div>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10 mb-4">
+          <div
+            class="fs-6 text-break mb-2 d-block justify-content-center border-top border-2 top-line"
+          >
+            [1] M. Lolaico et al, Computer-Aided Design of A-Trail Routed
+            Wireframe DNA Nanostructures with Square Lattice Edges,
+            <b>ACS Nan</b>, 2023, 17, 7, 6565–6574<br />
+            [2] Jong-Shik Shin and Niles A. Pierce, A Synthetic DNA Walker for
+            Molecular Transport,
+            <b>J. Am. Chem</b>. Soc, 2004, 126, 35, 10834–10835<br />
+            [3] I Kawamata, Y Suzuki, and S Satoshi, 2021,
+            <b>DNA origami 入門－基礎から学ぶDNAナノ構造体の設計技法－</b>
+            Tokyo: Ohmsha
+          </div>
         </div>
         <div class="col-md-1"></div>
       </div>
@@ -216,7 +390,7 @@
 
     <!--footer-->
     <div class="container-fluid" style="background-color: #333">
-      <div class="row">
+      <div class="row align-items-center">
         <div class="footer">
           <div class="text-center my-2">©BIOMOD 2023 YOKABIO</div>
         </div>
