@@ -226,8 +226,7 @@ a {
 }
 
 /*スクロール先位置調整*/
-#simulation,
-#design {
+.scroll {
   display: block;
   padding-top: 60px;
   margin-top: -60px;
