@@ -119,33 +119,67 @@
       </div>
     </nav>
 
-    <!--Backgroundセクション-->
-    <div class="container-fluid" style="background-color: #f0fff0">
+    <div class="container-fluid">
       <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <div class="fs-2 fw-bold hline mx-auto" id="ds">
+            Future Application<br />
+          </div>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+      <div class="row mt-3">
         <div class="col-md-2"></div>
         <div class="col-md-8">
-          <div class="fw-bold fs-4 mt-4 title-margin">セクション1</div>
-        </div>
-        <div class="col-md-2"></div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-2"></div>
-        <div
-          class="col-md-8 text-break mb-2 d-block justify-content-center border-top border-2 top-line"
-        >
-          本文
+          We designed DNA structures that can represent three states: “6-vertex
+          structure”, “8-vertex structure”, and “diamond dodecahedron structure
+          (intermediate)”. Among these three states, the 6-vertex and 8-vertex
+          structures are somewhat fixed in structure by fastening DNA and have a
+          more stable structure than the intermediate. Therefore, we thought
+          that two different roles could be assigned to the “6-vertex structure”
+          and “8-vertex structure” in the future. Below, we summarize specific
+          examples of their applications.<br /><br />
+          First, as an application that can be realized in the near future, we
+          focused on the vertex part of the structure. Our structure can take a
+          form in which six vertices and eight vertices protrude. Therefore, by
+          attaching a chemical substance to this vertex part, the structure can
+          have a function of using two properties arbitrarily. Also, if a
+          chemical substance is attached only to one set of vertices, for
+          example, only six vertices, it is expected that it will be active when
+          six vertices protrude and inactive when eight vertices protrude
+          because the chemical substance is hidden.<br /><br />
+          The problem when considering such applications is thought to be the
+          existence of an intermediate. The intermediate is essential because it
+          has a reversible structure, but if it stays in the intermediate state
+          for a long time, specific chemical activity attached to the 6-vertex
+          and 8-vertex structures will be lost. Therefore, there are technical
+          challenges such as how to switch between 6-vertex and 8-vertex
+          structures quickly in the future or how to minimize the time taken for
+          intermediates.<br /><br />
+          Next, changes in the trigger part of the opening and closing mechanism
+          can be considered. Currently, chain substitution reactions using ssDNA
+          are used, but by changing to chain substitution reactions using
+          I-motifs[1] that react to pH, structural changes according to changes
+          in pH become possible. Therefore, we believe that this structure can
+          ultimately serve as an external sensor for molecular robots that
+          convert changes in nano-scale environments into signals that can be
+          recognized as structural changes.<br /><br />
+          The problem is likely to be the sensitivity of the sensor. In our
+          structure's deformation mechanism, deformation that is assumed not to
+          occur unless all triggers react does not occur. Therefore, measures
+          such as reducing the scale of the entire structure and bringing all
+          sensor positions closer together are necessary to increase
+          sensitivity.
         </div>
         <div class="col-md-2"></div>
       </div>
     </div>
-
-    <!--Problem&solutionセクション-->
-    <div class="container-fluid" style="background-color: #f0fff0">
-      <div class="row">
+    <div class="container-fluid">
+      <div class="row mt-3">
         <div class="col-md-2"></div>
         <div class="col-md-8">
-          <div class="fw-bold fs-4 mt-4 title-margin">セクション2</div>
+          <div class="fw-bold fs-3 mt-4 title-margin">Refference</div>
         </div>
         <div class="col-md-2"></div>
       </div>
@@ -154,29 +188,19 @@
         <div class="col-md-2"></div>
         <div
           class="col-md-8 text-break mb-2 d-block justify-content-center border-top border-2 top-line"
-        >
-          本文
-        </div>
-        <div class="col-md-2"></div>
-      </div>
-    </div>
-
-    <!--Problem&solutionセクション-->
-    <div class="container-fluid" style="background-color: #f0fff0">
-      <div class="row">
-        <div class="col-md-2"></div>
-        <div class="col-md-8">
-          <div class="fw-bold fs-4 mt-4 title-margin">セクション3</div>
-        </div>
+        ></div>
         <div class="col-md-2"></div>
       </div>
 
       <div class="row">
         <div class="col-md-2"></div>
-        <div
-          class="col-md-8 text-break mb-2 d-block justify-content-center border-top border-2 top-line"
-        >
-          本文
+        <div class="col-md-8 mb-4">
+          <div class="fs-6 text-break mb-2 d-block justify-content-center">
+            [1] pH-Dependent Structures of an i-Motif DNA in Solution Kyeong Sik
+            Jin, Su Ryon Shin, Byungcheol Ahn, Yecheol Rho, Seon Jeong Kim, and
+            Moonhor Ree The Journal of Physical Chemistry B 2009 113 (7),
+            1852-1856 DOI: 10.1021/jp808186z
+          </div>
         </div>
         <div class="col-md-2"></div>
       </div>
@@ -184,7 +208,7 @@
 
     <!--footer-->
     <div class="container-fluid" style="background-color: #333">
-      <div class="row">
+      <div class="row align-items-center">
         <div class="footer">
           <div class="text-center my-2">©BIOMOD 2023 YOKABIO</div>
         </div>
@@ -193,9 +217,19 @@
 
     <!--bootstrap5_js-->
     <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"
+    ></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
