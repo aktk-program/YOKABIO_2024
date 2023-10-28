@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/my.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans+JP"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--navbar-->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark nav-bg fixed-top"
+      style="background-color: #fff; opacity: 0.9"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" style="color: #333" href="index.html"
+          >YOKABIO 2023</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link fw-bold nav-now"
+                aria-current="page"
+                href="index.html"
+                >HOME</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-tx" href="project.html">PROJECT</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle nav-tx"
+                href="ds.html"
+                role="button"
+                data-bs-toggle=""
+                aria-expanded="false"
+              >
+                DESIGN &amp; SIMULATION
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="ds.html#ds">DESIGN</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="ds.html#simulation"
+                    >SIMULATION</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-tx" href="rd.html"
+                >RESULT &amp; DISCUSSION</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-tx" href="future.html">FUTURE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-tx" href="elsi.html">ELSI</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-tx me-1" href="team.html">TEAM</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-tx me-1" href="appendix.html">APPENDIX</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link nav-tx me-2"
+                href="https://github.com/YOKABIO/data_2023"
+                ><img
+                  src="./images/github.png"
+                  class="img-fluid"
+                  style="width: 20px; transform: translate(0px, -2px)"
+                />
+                Github</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <div class="fs-2 fw-bold hline mx-auto" id="ds">
+            Supporting Information<br />
+          </div>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <div class="fs-3 mt-3 title-margin fw-bold" id="design">
+            Appendix<br />
+            Section1. 設計の妥当性確認のためのシミュレーション
+          </div>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <div
+            class="fs-6 text-break mb-2 d-block justify-content-center border-top border-2 top-line"
+          ></div>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+
+      <div class="row mb-4">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <p class="fs-4 mt-3 hleft-line">ルーティング</p>
+          Wireframe構造におけるscaffold鎖のルーティングを行った。ルーティングは以下の条件の下で行われた。
+          <br />・全ての辺をscaffold鎖が通過する。
+          <br />・1つの辺をscaffold鎖が通過する回数を1回のみにする。
+          <br />・メッシュの各辺同士をつなぐDNA同士が交差しないようにすること。
+          <br />・上記の条件を満たすことが出来ない構造である場合、必要に応じて1つの辺を2回scaffold鎖が通過する。scaffold鎖が二回通過した辺をdouble
+          edge と呼ぶ。
+          <br />ルーティングには先行研究[1]で用いられたソフトウェアを使用した。
+          <br />(https://github.com/mohamma1/bscor)
+
+          <img
+            src="./images/dsfig5.png"
+            class="d-block mx-auto"
+            style="max-width: 600px; width: 100%"
+          />
+          <p style="text-align: center">
+            Fig.1
+            ルーティングによって導かれた菱形十二面体wireframe構造のscaffold鎖の経路
+          </p>
+          <p class="fs-4 mt-3 hleft-line">辺を強化する</p>
+          ルーティングされた構造にstaple鎖を追加して形成されるwireframe構造の辺は、1本または2本のDNA二重らせんから構成されている。この状態では構造変化の際に辺が変形してしまい設計通りの変形が出来ないことが考えられる。したがって、wireframe構造を変形に耐えうるより頑丈な構造にするために、それぞれの辺を4
+          Helix Bundleにした。辺の強化は以下の手順で行われた。 Step1.
+          全ての辺にscaffold鎖のループを一つ追加する。（2番目と3番目のらせんの追加。）
+          Step2. Double edge以外の辺に短いscaffold鎖（miniscaffold）を追加する。
+          （4番目のらせんの追加。double
+          edgeには既に2回scaffoldが通過しているのでminiscaffoldは必要ない。）
+          辺の強化には論文２の作者によって作られた以下のソフトウェアを使用した。
+          (https://github.com/marlol4/4vHelix)
+          <p class="fs-4 mt-3 hleft-line">鎖置換を用いて角を閉じる</p>
+          角を閉じるために辺から伸びるfastening-DNAは、隣り合う辺に向かって伸びていく必要がある。caDNAno上でDNAの二重らせんの位相を確認し、適切な位置からfastening-DNAが伸びるように設計した。
+          fastening-DNAはひとつの辺から複数本伸びる。fastening-DNAの配列は、自らの辺から伸びたfastening-DNAどうしで結合が起きないように決めた。
+          <p class="fs-4 mt-3 hleft-line">
+            辺の可動性のために必要なヒンジの塩基数
+          </p>
+          構造体の角を閉じる際に必要なヒンジの長さlは以下の式を使って求めた。<br />
+          式<br />
+          二重らせん間の距離∆hを3
+          nmとし、角度θを30°まで閉じるとすると、l=2.8977..である。ヒンジはssDNAとして設計される。ssDNA
+          1nt当たりの長さを0.7
+          nmとすると、必要なヒンジの塩基数は、最低で5ntである。
+          <p class="fs-4 mt-3 hleft-line">設計されたファイル</p>
+          最終的な設計ファイル（右上のgithubアイコンから移動した場所に格納されています。）<br />
+          VertexSwitcher_structure.json<br />
+          VertexSwithcer_sequence.xisx
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <div class="fs-3 mt-3 title-margin fw-bold">
+            Section2. 設計の妥当性確認のためのシミュレーション
+          </div>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <div
+            class="fs-6 text-break mb-2 d-block justify-content-center border-top border-2 top-line"
+          ></div>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+
+      <div class="row mb-4">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <p class="fs-4 mt-3 hleft-line">oxDNAによるシミュレーション</p>
+          構造の安定性の確認はoxDNAを用いて行なった。oxDNAは粗視化分子動力学シミュレーションを行なうソフトウェアである。シミュレーションは大きく4段階に分かれる。まずRigid-body
+          simulationによりcaDNAnoで設計された構造をおおまかに成形し、MC
+          relaxationおよびMD
+          relaxationと呼ばれる短時間の計算によって構造の無理を解消する。その後、MD
+          simulationにより構造の時間変化を計算する。
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+    </div>
+    <!--footer-->
+    <div class="container-fluid" style="background-color: #333">
+      <div class="row align-items-center">
+        <div class="footer">
+          <div class="text-center my-2">©BIOMOD 2023 YOKABIO</div>
+        </div>
+      </div>
+    </div>
+
+    <!--bootstrap5_js-->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
