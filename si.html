@@ -152,15 +152,17 @@
       <div class="row mb-4">
         <div class="col-md-1"></div>
         <div class="col-md-10">
-          <p class="fs-4 mt-3 hleft-line">ルーティング</p>
-          Wireframe構造におけるscaffold鎖のルーティングを行った。ルーティングは以下の条件の下で行われた。
-          <br />・全ての辺をscaffold鎖が通過する。
-          <br />・1つの辺をscaffold鎖が通過する回数を1回のみにする。
-          <br />・メッシュの各辺同士をつなぐDNA同士が交差しないようにすること。
-          <br />・上記の条件を満たすことが出来ない構造である場合、必要に応じて1つの辺を2回scaffold鎖が通過する。scaffold鎖が二回通過した辺をdouble
-          edge と呼ぶ。
-          <br />ルーティングには先行研究[1]で用いられたソフトウェアを使用した。
-          <br />(https://github.com/mohamma1/bscor)
+          <p class="fs-4 mt-3 hleft-line">routing</p>
+          I conducted routing of the scaffold strand in the wireframe structure
+          under the following conditions: <br />
+          ・The scaffold strand passes through every edge. <br />
+          ・The scaffold strand passes through each edge only once.<br />
+          ・Ensure that the DNA strands connecting the edges of the mesh do not
+          cross. <br />・In cases where the above conditions cannot be met, if
+          necessary, the scaffold strand passes through one edge twice. A
+          double-pass edge is referred to as a 'double edge.' <br />For routing,
+          I utilized software employed in previous research [1]<br />
+          (https://github.com/mohamma1/bscor).
 
           <img
             src="./images/sifig1.png"
@@ -171,15 +173,26 @@
             Fig.1
             ルーティングによって導かれた菱形十二面体wireframe構造のscaffold鎖の経路
           </p>
+          <p style="text-align: center; font-size: 13px">
+            この図は先述のbscorソフトウェアではなく、後述の4vHelixソフトウェアによって表示された。白い線がscaffold鎖の経路を示している。
+          </p>
           <p class="fs-4 mt-3 hleft-line">辺を強化する</p>
-          ルーティングされた構造にstaple鎖を追加して形成されるwireframe構造の辺は、1本または2本のDNA二重らせんから構成されている。この状態では構造変化の際に辺が変形してしまい設計通りの変形が出来ないことが考えられる。したがって、wireframe構造を変形に耐えうるより頑丈な構造にするために、それぞれの辺を4
-          Helix Bundleにした。辺の強化は以下の手順で行われた。 Step1.
-          全ての辺にscaffold鎖のループを一つ追加する。（2番目と3番目のらせんの追加。）
-          Step2. Double edge以外の辺に短いscaffold鎖（miniscaffold）を追加する。
-          （4番目のらせんの追加。double
-          edgeには既に2回scaffoldが通過しているのでminiscaffoldは必要ない。）
-          辺の強化には論文２の作者によって作られた以下のソフトウェアを使用した。
-          (https://github.com/marlol4/4vHelix)
+          The edges of the wireframe structure, which is formed by adding staple
+          strands to the routed structure, are composed of one or two DNA double
+          helices. In this state, it is conceivable that the edges may deform
+          during structural transformations, preventing the desired deformation
+          as per the design. Therefore, to make the wireframe structure more
+          robust and able to withstand deformations, each edge was transformed
+          into a 4 Helix Bundle. The edge reinforcement was carried out through
+          the following steps: <br />Step 1. Adding a loop of the scaffold
+          strand to all edges (adding the second and third helices). <br />Step
+          2. Adding short scaffold strands (miniscaffold) to the edges other
+          than double edges (adding the fourth helix). Miniscaffold is not
+          required for double edges, as they already have two passes of the
+          scaffold strand. Edge reinforcement was accomplished using the
+          software developed by the authors of Reference 2<br />
+          (https://github.com/marlol4/4vHelix)."
+
           <p class="fs-4 mt-3 hleft-line">鎖置換を用いて角を閉じる</p>
           角を閉じるために辺から伸びるfastening-DNAは、隣り合う辺に向かって伸びていく必要がある。caDNAno上でDNAの二重らせんの位相を確認し、適切な位置からfastening-DNAが伸びるように設計した。
           fastening-DNAはひとつの辺から複数本伸びる。fastening-DNAの配列は、自らの辺から伸びたfastening-DNAどうしで結合が起きないように決めた。
@@ -262,6 +275,78 @@
           <a href="./data/RMSF.py" download style="text-decoration: underline"
             >python file</a
           >
+
+          <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+              <div class="fs-3 mt-3 title-margin fw-bold" id="section3">
+                Section3. 構造体形成手法の検討
+              </div>
+            </div>
+            <div class="col-md-1"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+              <div
+                class="fs-6 text-break mb-2 d-block justify-content-center border-top border-2 top-line"
+              ></div>
+              <p class="fs-4 mt-3 hleft-line">
+                アニーリングプロトコル2によって生成された構造体の電気泳動結果
+              </p>
+              アニーリングプロトコル2によって生成された構造体のアガロースゲル電気泳動結果をFig.3に示す。
+              <img
+                src="./images/sifig3.png"
+                class="d-block mx-auto"
+                style="max-width: 600px; width: 100%"
+              />
+              <p style="text-align: center">
+                Fig.3
+                アニーリングプロトコル２によって生成された構造体の電気泳動結果
+              </p>
+              MgCl2濃度17.5mMのバンドが濃く表れている。アニーリングプロトコル2は3D
+              DNA
+              origamiに普遍的なアニーリングプロトコルであり、実際にはより最適化されている可能性の高いアニーリングプロトコル1を用いて実験を進めた。
+              <p class="fs-4 mt-3 hleft-line">
+                限外ろ過による精製後のアガロースゲル電気泳動結果
+              </p>
+              限外ろ過による精製後のアガロースゲル電気泳動結果をFig.4に示す。
+            </div>
+            <img
+              src="./images/sifig4.png"
+              class="d-block mx-auto"
+              style="max-width: 600px; width: 100%"
+            />
+            <p style="text-align: center">
+              Fig.4 限外ろ過による精製後の電気泳動結果
+            </p>
+            目的の構造体を形成していないstapleに加えて、目的の構造体そのものも取り除かれてしまっていることが分かる。塩濃度が高いため、限外ろ過による収率が低いのだと考えられる。次の実験ではゲル切り出しで精製した。
+            <div class="col-md-1"></div>
+          </div>
+          <div class="row mt-5">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+              <div class="fs-2 fw-bold hline mx-auto" id="ds">
+                Material &amp; Methods
+              </div>
+            </div>
+            <div class="col-md-1"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+              <p class="fs-4 mt-3 hleft-line">溶液調製の組成</p>
+              <img
+                src="./images/sifig4.png"
+                class="d-block mx-auto"
+                style="max-width: 600px; width: 100%"
+              />
+              <p style="text-align: center">
+                Fig.4 限外ろ過による精製後の電気泳動結果
+              </p>
+            </div>
+            <div class="col-md-1"></div>
+          </div>
         </div>
         <div class="col-md-1"></div>
       </div>
