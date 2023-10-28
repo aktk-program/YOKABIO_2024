@@ -85,8 +85,26 @@
             <li class="nav-item">
               <a class="nav-link nav-tx me-1" href="team.html">TEAM</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link nav-tx me-1" href="appendix.html">APPENDIX</a>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle nav-tx"
+                href="si.html"
+                role="button"
+                data-bs-toggle=""
+                aria-expanded="false"
+              >
+                Supportiong Information
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="si.html">Appendix</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="si.html#mm"
+                    >Material &amp; Methods</a
+                  >
+                </li>
+              </ul>
             </li>
             <li class="nav-item">
               <a
@@ -132,12 +150,10 @@
             class="fs-6 text-break mb-2 d-block justify-content-center border-top border-2 top-line"
           >
             We designed the Vertex-Switcher utilizing caDNAno. <br />For a more
-            comprehensive explanation, please refer to (SI Appendix, section
-            1).<br />
-
-            我々はVertex-Switcherを、caDNAnoを用いて設計した。
-            <br />より詳しい説明は<a href="index.html"
-              >（SI Appendix, section1）</a
+            comprehensive explanation, please refer to <br /><a
+              href="si.html"
+              style="text-decoration: underline"
+              >（SI Appendix, section1）.</a
             >
           </div>
         </div>
@@ -147,28 +163,19 @@
       <div class="row mb-4">
         <div class="col-md-1"></div>
         <div class="col-md-5">
-          <p class="fs-4 mt-3 hleft-line">
-            Overvew of Vertex-Switcher<br />ワイヤーフレームDNA origami
-          </p>
-          Vertex-Switcherの基本構造は菱形十二面体である。この構造には4つの辺から構成されるX字の頂点（Vertex
-          Group X）が6つ、3つの辺から構成されるY字の頂点(Vertex Group
-          Y)が8つ存在する。
-          頂点グループX,Yのいずれかが閉じることでもう一方の頂点グループが構造の内側に落ち込んで異なる頂点数を持つ構造が現れる。このような変形を行うための構造を追加することで、菱形十二面体は6頂点体および8頂点体の二つへ変形可能な中間体として捉えることができる。我々はこの中間体を、ワイヤーフレームDNA
-          origamiを用いて作成した。ワイヤーフレームDNA
-          origamiは1本の長いssDNA(scaffold)と多数の短いssDNA(staple)のハイブリダイゼーションによって構造を作る。我々の構造はコンピュータプログラムを使って設計された。[1]<br />
-          "The fundamental structure of Vertex-Switcher is a rhombic
-          dodecahedron. This structure comprises six X-shaped vertices (Vertex
-          Group X), each composed of four edges, and eight Y-shaped vertices
-          (Vertex Group Y), each formed by three edges. By closing one of the
-          Vertex Groups X or Y, the other vertex group retracts inside the
-          structure, resulting in a configuration with a different number of
-          vertices. The addition of structures that enable such transformations
-          allows us to consider the rhombic dodecahedron as an intermediate form
-          that can transition between a hexahedral and an octahedral structure.
-          We constructed this intermediate form using wireframe DNA origami, a
-          method involving the hybridization of a single long ssDNA (scaffold)
-          with numerous short ssDNA (staple) strands. Our structure was
-          meticulously designed with the aid of a computer program [1].<br /><br />
+          <p class="fs-4 mt-3 hleft-line">Overvew of Vertex-Switcher</p>
+          The default structure of Vertex-Switcher is a rhombic dodecahedron.
+          This structure has six X-shaped vertices (Vertex Group X), each
+          composed of four edges, and eight Y-shaped vertices (Vertex Group Y),
+          each formed by three edges. By closing one of the Vertex Groups X or
+          Y, the other vertex group retracts inside the structure, resulting in
+          a structure with a different number of vertices. The addition of
+          mechanism that enable such transformations allows us to consider the
+          rhombic dodecahedron as an intermediate form that can transition
+          between a hexahedral and an octahedral structure. We created this
+          intermediate using wireframe DNA origami. Wireframe DNA origami
+          creates a wireframe structure by hybridization of one long ssDNA
+          (scaffold) to many short ssDNAs (staple).<br /><br />
         </div>
         <div class="col-md-5 text-break d-block">
           <model-viewer
@@ -196,9 +203,6 @@
           <p style="text-align: center">
             Fig.1 Dodecahedral Structure<br />
             Observation of this 3D model is possible through dragging.<br />
-
-            Fig.1 菱形十二面体<br />
-            この構造体をドラッグすることで観察できます。
           </p>
         </div>
         <div class="col-md-1"></div>
@@ -207,18 +211,18 @@
       <div class="row mb-4">
         <div class="col-md-1"></div>
         <div class="col-md-4">
-          <p class="fs-4 mt-3 hleft-line">4 helix Bundle</p>
-          To maintain a stable form in a solution, it is imperative to employ a
-          rigid structure. We ensured rigidity by configuring the DNA comprising
-          each edge into a 4-Helix Bundle [1]. The connection of four helices in
-          parallel through crossovers enhances the strength of each edge. The
-          design of the 4-Helix Bundle was also meticulously orchestrated with
-          the assistance of a computer program.<br />
-
-          溶液中で安定して形を保つために、剛直な構造にする必要がある。我々はそれぞれの辺を構成するDNAを、4Helix
-          Bundleにすることで剛直性を確保した。[1]
-          4つのHelixがクロスオーバーによって平行に繋がることでそれぞれの辺が強化される。4Helix
-          Bundleもコンピュータプログラムを使って設計された。
+          <p class="fs-4 mt-3 hleft-line">
+            4 helix Bundle for High rigidity edge
+          </p>
+          The goal of our project is to create DNA nanostructures that can be
+          transformed into structures with different numbers of vertices by
+          closing the vertices. However, if the structure consists of a single
+          helix per edge, the edge may be deformed during the transformation.
+          Therefore, to create DNA nanostructures that work as designed, the
+          edges must be rigid structures. We ensured rigidity by constructing
+          the edges of the structure with 4Helix Bundle. The 4 helix bundle is a
+          structure of four DNA helices bound together by a crossover of staple
+          strands and has higher stiffness than a single DNA helix.<br />
         </div>
         <div class="col-md-2">
           <img
@@ -267,14 +271,9 @@
       <div class="row">
         <div class="col-md-1"></div>
         <div class="col-md-5">
-          <p class="fs-4 mt-3 hleft-line">鎖置換</p>
-          中間体から別状態へ変形させるために、特定の角を閉じる機構が必要である。我々は鎖置換の仕組みを機構に利用した。[2]
-          機構はそれぞれの辺から伸ばされたssDNA(fastening-DNA),
-          向かい合う2辺のfastening-DNAと結合して角を閉じるためのssDNA（close-DNA）,
-          ssDNA同士のつなぎ合わせを解除するためのシグナルDNA（open-DNA）から構成されている。
-          Close-DNAを加えると、ope-DNAが隣り合う辺同士の開閉機構を橋渡しするように二重鎖を形成して、隣り合う辺同士が引き寄せられることで角が閉じる。このようにして頂点グループX,Yの一方を閉じることでもう一方の頂点グループに所属する頂点が落ち込み異なる頂点数の構造を形成する。
-          上記のように一部の頂点が閉じた構造にopen-DNAを加えると、open-DNAとclose-DNAが二重鎖を形成することで、鎖置換反応によって開閉機構ssDNAからclose-DNAが取り除かれ、角が開く。角が開いたDNAは中間体に戻り、再びclose-DNAを入れることで異なる頂点数の構造に変化することが出来る
-          。[2]<br />
+          <p class="fs-4 mt-3 hleft-line">
+            Strand displacement reaction for transformation the structure
+          </p>
           To enable the transformation from an intermediate state to an
           alternative state, a specific angle-closing mechanism is necessary. We
           harnessed the chain replacement mechanism for this purpose [2]. The
@@ -297,11 +296,7 @@
         </div>
         <div class="col-md-5">
           <img src="./images/dsfig4.png" class="img-fluid w-100" />
-          <p style="text-align: center">
-            Fig.4 Chain Substitution<br />
-
-            Fig.4 鎖置換
-          </p>
+          <p style="text-align: center">Fig.4 Strand displacement<br /></p>
         </div>
         <div class="col-md-1"></div>
       </div>
@@ -309,7 +304,9 @@
       <div class="row">
         <div class="col-md-1"></div>
         <div class="col-md-5">
-          <p class="fs-4 mt-3 hleft-line">ヒンジの延長</p>
+          <p class="fs-4 mt-3 hleft-line">
+            Extension of hinges for improved mobility
+          </p>
           In order to bring the edges closer together, it is imperative to
           extend the length of the hinge segments that connect these edges,
           thereby enhancing their mobility. According to our calculations, the
@@ -320,18 +317,10 @@
           hinge length. These variations feature hinge segments of 3 nucleotides
           (default), 6 nucleotides (minimum requirement), and 10 nucleotides
           (allowing for flexibility).<br />
-
-          辺どうしを近づけるためには、辺をつなぐヒンジ部分の長さを延長して可動性を上げる必要がある。我々の計算によると、辺によってできる角を30度まで絞るために最低限必要なヒンジの長さはssDNA
-          5ntにほぼ等しかった。[3]
-          これを参考に最適なヒンジ長を探るため、3パターンの構造体を作成した。ヒンジ部分が3nt(デフォルト)、6nt(最低限)、10nt（余裕あり）の3つである。
         </div>
         <div class="col-md-5">
           <img src="./images/dsfig5.png" class="img-fluid w-100" />
-          <p style="text-align: center">
-            Fig.5 Hinge Elongation<br />
-
-            Fig.5 ヒンジの延長
-          </p>
+          <p style="text-align: center">Fig.5 Hinge Elongation<br /></p>
         </div>
         <div class="col-md-1"></div>
       </div>
@@ -356,10 +345,10 @@
           >
             We confirmed the validity of the designed structure through
             simulation, employing oxDNA and NUPACK. <br />For a more detailed
-            explanation, please refer to (SI Appendix, section 2).<br />
-            設計した構造が妥当かどうかシミュレーションによって確認した。シミュレーションにはoxDNAとNUPACKを用いた。
-            <br />より詳しい説明は<a href="index.html"
-              >（SI Appendix, section2）</a
+            explanation, please refer to <br /><a
+              href="index.html"
+              style="text-decoration: underline"
+              >（SI Appendix, section2）.</a
             >
           </div>
         </div>
@@ -377,10 +366,7 @@
           A color-coded map based on RMSF values is presented in Fig. 5. It is
           evident that as the hinge length increases, particle fluctuations
           become more pronounced. Nevertheless, the overall structural integrity
-          is maintained, suggesting a consistent level of rigidity.<br />
-
-          設計した中間体が安定して形を保つか、oxDNAを用いてMD
-          simulationを行ない、RMSFデータによりそれを評価した。RMSFは粒子の揺らぎの大きさを示す指標であり、小さい程構造が安定であると言える。RMSFの値によって色付けしたカラーマップをFig.5に示す。ヒンジの長さが長くなるほど粒子の揺らぎは大きくなるが、どれも概形は保たれており、一定以上の剛性があると言える。
+          is maintained, suggesting a consistent level of rigidity.<br />.
         </div>
         <div class="col-md-5 text-break d-block">
           <img src="./images/dsfig6.png" class="img-fluid w-100" />
@@ -394,9 +380,6 @@
             length.<br />
             The hinge lengths correspond to a) 3 nucleotides, b) 6 nucleotides,
             and c) 10 nucleotides.<br />
-
-            粒子の揺らぎの大きさをヒンジの長さごとに示す。<br />ヒンジの長さは、a)
-            3nt, b) 6nt, c) 10nt
           </p>
         </div>
         <div class="col-md-1"></div>
@@ -414,23 +397,16 @@
           6. From the free energy values, it can be inferred that both close-DNA
           strands are capable of binding to fastening-DNA and further, with a
           higher affinity, to open-DNA.<br />
-
-          設計した配列について、意図した鎖置換が起きるかNUPACKを使って検証した。6頂点体になるために絞る角と、8頂点体になるために絞る角は別の配列が用いられている。それぞれの4℃での最小自由エネルギー構造について検証した結果をFig.6に示す。自由エネルギー値より、どちらのclose-DNAについてもfastening-DNAと結合することができ、また、それよりさらに高い親和性でopen-DNAと結合することが推測できる。
         </div>
         <div class="col-md-5">
           <img src="./images/dsfig7.png" class="img-fluid w-100" />
           <p style="text-align: center; margin-bottom: 0%">
             Fig.7 Confirmation of strand displacement.<br />
-
-            Fig.7 鎖置換の確認
           </p>
           <p style="font-size: 10px; text-align: center">
             a) Strand displacement for the formation of a hexahedron with six
             vertices, <br />b) Strand displacement for the formation of a
             hexahedron with eight vertices <br />
-
-            a) 6頂点体になるための鎖置換,<br />
-            b) 8頂点体になるための鎖置換
           </p>
         </div>
         <div class="col-md-1"></div>
@@ -451,26 +427,15 @@
           assessment of structural stability was focused on the 10-nucleotide
           hinge, which was the least stable in the results of the intermediate
           state's rigidity confirmation.<br />
-
-          中間体は鎖置換によって6頂点体または8頂点体に変形する。それぞれの構造が安定して形を保つか、oxDNAを用いてMD
-          simulationを行ない、RMSFデータによりそれを評価した。RMSFの値によって色付けしたカラーマップをFig.7に示す。中間体と比べても安定した構造だと言える。時間の都合上、中間体の剛性確認の結果において最も不安定だったヒンジ10ntでの構造の安定性のみ確認した。
         </div>
         <div class="col-md-5">
           <img src="./images/dsfig8.png" class="img-fluid w-100" />
           <p style="text-align: center; margin-bottom: 0%">
             Fig.8 Stability After Transformation<br />
-
-            Fig.8 変形後の安定性
           </p>
           <p style="font-size: 10px; text-align: center">
             Illustrating Particle Fluctuations After the Deformation of the 10nt
             Hinge Structure<br />
-
-            ヒンジ10ntの構造体について変形後の粒子の揺らぎの大きさを示す。<br />
-
-            a) Hexahedral Structure, b) Octahedral Structure<br />
-
-            a) 6頂点体, b) 8頂点体
           </p>
         </div>
         <div class="col-md-1"></div>
