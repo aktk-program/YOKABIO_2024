@@ -1,5 +1,6 @@
 /*html記述
 スクロールバーの有無で画面幅が変わって面倒だったので暫定スクロールバーOFF*/
+/*
 html {
   overflow-y: scroll;
   -ms-overflow-style: none;
@@ -8,6 +9,7 @@ html {
 html::-webkit-scrollbar {
   display: none;
 }
+*/
 
 /*body記述
 画像とナビバー被らないようにtopにマージン配置*/
