@@ -134,7 +134,7 @@
         <div class="col-md-1"></div>
         <div class="col-md-10">
           <div class="fs-3 mt-3 title-margin fw-bold" id="design">
-            Section1. 設計の妥当性確認のためのシミュレーション
+            Section1. Simulation for Validating the Soundness of the Design
           </div>
         </div>
         <div class="col-md-1"></div>
@@ -161,8 +161,12 @@
           cross. <br />・In cases where the above conditions cannot be met, if
           necessary, the scaffold strand passes through one edge twice. A
           double-pass edge is referred to as a 'double edge.' <br />For routing,
-          I utilized software employed in previous research [1]<br />
-          (https://github.com/mohamma1/bscor).
+          I utilized software employed in previous research [1].<br />
+          <a
+            href="https://github.com/mohamma1/bscor"
+            style="text-decoration: underline"
+            >https://github.com/mohamma1/bscor</a
+          >
 
           <img
             src="./images/sifig1.png"
@@ -170,13 +174,15 @@
             style="max-width: 600px; width: 100%"
           />
           <p style="text-align: center">
-            Fig.1
-            ルーティングによって導かれた菱形十二面体wireframe構造のscaffold鎖の経路
+            Fig.1 The path of scaffold strands in the rhombic dodecahedron
+            wireframe structure guided by routing
           </p>
           <p style="text-align: center; font-size: 13px">
-            この図は先述のbscorソフトウェアではなく、後述の4vHelixソフトウェアによって表示された。白い線がscaffold鎖の経路を示している。
+            This figure was generated using the 4vHelix software, as mentioned
+            later, rather than the previously mentioned bscor software. The
+            white lines indicate the path of the scaffold strands.
           </p>
-          <p class="fs-4 mt-3 hleft-line">辺を強化する</p>
+          <p class="fs-4 mt-3 hleft-line">Strengthening the Edges</p>
           The edges of the wireframe structure, which is formed by adding staple
           strands to the routed structure, are composed of one or two DNA double
           helices. In this state, it is conceivable that the edges may deform
@@ -190,34 +196,47 @@
           than double edges (adding the fourth helix). Miniscaffold is not
           required for double edges, as they already have two passes of the
           scaffold strand. Edge reinforcement was accomplished using the
-          software developed by the authors of Reference 2<br />
-          (https://github.com/marlol4/4vHelix)."
+          software developed by the authors of Reference 2.<br />
+          <a
+            href="https://github.com/marlol4/4vHelix"
+            style="text-decoration: underline"
+            >https://github.com/marlol4/4vHelix</a
+          >
 
-          <p class="fs-4 mt-3 hleft-line">鎖置換を用いて角を閉じる</p>
-          角を閉じるために辺から伸びるfastening-DNAは、隣り合う辺に向かって伸びていく必要がある。caDNAno上でDNAの二重らせんの位相を確認し、適切な位置からfastening-DNAが伸びるように設計した。
-          fastening-DNAはひとつの辺から複数本伸びる。fastening-DNAの配列は、自らの辺から伸びたfastening-DNAどうしで結合が起きないように決めた。
           <p class="fs-4 mt-3 hleft-line">
-            辺の可動性のために必要なヒンジの塩基数
+            Closing corners using strand displacement
           </p>
-          構造体の角を閉じる際に必要なヒンジの長さlは以下の式を使って求めた。<br />
-          式<br />
-          二重らせん間の距離∆hを3
-          nmとし、角度θを30°まで閉じるとすると、l=2.8977..である。ヒンジはssDNAとして設計される。ssDNA
-          1nt当たりの長さを0.7
-          nmとすると、必要なヒンジの塩基数は、最低で5ntである。
-          <p class="fs-4 mt-3 hleft-line">設計されたファイル</p>
-          最終的な設計ファイル<br />
+          To close the corners, the fastening-DNA extending from the edges must
+          grow towards the neighboring edges. We verified the phase of DNA
+          double helices on caDNAno and designed the fastening-DNA to extend
+          from the appropriate positions. Multiple strands of fastening-DNA
+          extend from a single edge. The sequence of fastening-DNA was
+          determined to ensure that binding does not occur among the
+          fastening-DNA extending from the same edge.
+          <p class="fs-4 mt-3 hleft-line">
+            The number of base pairs required for the mobility of edges
+          </p>
+          The required length 'l' of the hinge necessary to close the corners of
+          the structure was determined using the following equation.<br />
+          <br />
+          Assuming a distance 'Δh' of 3 nm between the double helices and aiming
+          to close the angle 'θ' up to 30°, we find that 'l' equals 2.8977...
+          nm. The hinge is designed as single-stranded DNA (ssDNA). Considering
+          a length of 0.7 nm per ssDNA nucleotide, the minimum number of
+          nucleotides needed for the hinge is 5.
+          <p class="fs-4 mt-3 hleft-line">The designed file</p>
+          The ultimate design file<br />
           <a
             href="./data/VertexSwitcher.json"
             download
             style="text-decoration: underline"
-            >VertexSwitcher_structure.json</a
+            >VertexSwitcher_structure.json download</a
           ><br /><a
             href="./data/VertexSwitcher_sequence.xlsx"
             download
             style="text-decoration: underline"
           >
-            VertexSwithcer_sequence.xisx</a
+            VertexSwithcer_sequence.xisx download</a
           >
         </div>
         <div class="col-md-1"></div>
@@ -227,7 +246,7 @@
         <div class="col-md-1"></div>
         <div class="col-md-10">
           <div class="fs-3 mt-3 title-margin fw-bold" id="section2">
-            Section2. 設計の妥当性確認のためのシミュレーション
+            Section2. Simulation for Validating the Design
           </div>
         </div>
         <div class="col-md-1"></div>
@@ -245,127 +264,144 @@
       <div class="row mb-4">
         <div class="col-md-1"></div>
         <div class="col-md-10">
-          <p class="fs-4 mt-3 hleft-line">oxDNAによるシミュレーション</p>
-          構造の安定性の確認はoxDNAを用いて行なった。oxDNAは粗視化分子動力学シミュレーションを行なうソフトウェアである。シミュレーションは大きく4段階に分かれる。まずRigid-body
-          simulationによりcaDNAnoで設計された構造をおおまかに成形し、MC
-          relaxationおよびMD
-          relaxationと呼ばれる短時間の計算によって構造の無理を解消する。その後、MD
-          simulationにより構造の時間変化を計算する。
-          <video
-            src="./movies/sifig2.gif"
-            class="d-block mx-auto"
-            loop
-            muted
-            autoplay
-          ></video>
+          <p class="fs-4 mt-3 hleft-line">Simulation using oxDNA</p>
+          The confirmation of structural stability was performed using oxDNA, a
+          software for coarse-grained molecular dynamics simulations. The
+          simulation consists of four main steps. First, a Rigid-body simulation
+          is used to roughly shape the structures designed in caDNAno.
+          Subsequently, short-time calculations known as MC relaxation and MD
+          relaxation are carried out to alleviate any structural strains.
+          Finally, the MD simulation is employed to calculate the temporal
+          evolution of the structure.
+          <img src="./movies/sifig2.gif" class="d-block mx-auto img-fluid" />
           <p style="text-align: center">
-            Fig.2 ヒンジ10nt中間体のMD simulation
+            Fig.2 MD Simulation of the 10nt Hinge Intermediate
           </p>
           <a
             href="./data/input_MD_intermediate"
             download
             style="text-decoration: underline"
-            >中間体のMD simulationインプットファイル</a
+            >Intermediate MD Simulation Input File</a
           >
 
-          <p class="fs-4 mt-3 hleft-line">RMSFによる安定性評価</p>
-          oxDNAによるシミュレーション後のデータをもとにRMSF値を算出し、安定性を評価した。RMSFはRoot
-          Mean Square of Fluctuationの略で、MD
-          simulationによって得られる粒子の揺らぎを、その粒子の平均位置からのズレ(標準偏差)によって表したものである。我々はRMSF値の大小に応じてカラーマップ化を行なうpythonプログラムを作成し、それを用いて視覚的に判断した。
+          <p class="fs-4 mt-3 hleft-line">Stability Assessment by RMSF</p>
+          We calculated the RMSF (Root Mean Square of Fluctuation) values based
+          on the data obtained from oxDNA simulations to assess stability. RMSF
+          quantifies the fluctuations of particles derived from MD simulations,
+          representing the deviation (standard deviation) of each particle from
+          its average position. We developed a Python program that converts RMSF
+          values into a color map, allowing for visual assessment based on the
+          magnitude of RMSF.<br />
           <a href="./data/RMSF.py" download style="text-decoration: underline"
-            >python file</a
+            >python file download</a
           >
+        </div>
+        <div class="col-md-1"></div>
 
-          <div class="row">
-            <div class="col-md-1"></div>
-            <div class="col-md-10">
-              <div class="fs-3 mt-3 title-margin fw-bold" id="section3">
-                Section3. 構造体形成手法の検討
-              </div>
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-10">
+            <div class="fs-3 mt-3 title-margin fw-bold" id="section3">
+              Section3. Examination of Structural Formation Methods
             </div>
-            <div class="col-md-1"></div>
           </div>
-          <div class="row">
-            <div class="col-md-1"></div>
-            <div class="col-md-10">
-              <div
-                class="fs-6 text-break mb-2 d-block justify-content-center border-top border-2 top-line"
-              ></div>
-              <p class="fs-4 mt-3 hleft-line">
-                アニーリングプロトコル2によって生成された構造体の電気泳動結果
-              </p>
-              アニーリングプロトコル2によって生成された構造体のアガロースゲル電気泳動結果をFig.3に示す。
-              <img
-                src="./images/sifig3.png"
-                class="d-block mx-auto"
-                style="max-width: 600px; width: 100%"
-              />
-              <p style="text-align: center">
-                Fig.3
-                アニーリングプロトコル２によって生成された構造体の電気泳動結果
-              </p>
-              MgCl2濃度17.5mMのバンドが濃く表れている。アニーリングプロトコル2は3D
-              DNA
-              origamiに普遍的なアニーリングプロトコルであり、実際にはより最適化されている可能性の高いアニーリングプロトコル1を用いて実験を進めた。
-              <p class="fs-4 mt-3 hleft-line">
-                限外ろ過による精製後のアガロースゲル電気泳動結果
-              </p>
-              限外ろ過による精製後のアガロースゲル電気泳動結果をFig.4に示す。
-            </div>
+          <div class="col-md-1"></div>
+        </div>
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-10">
+            <div
+              class="fs-6 text-break mb-2 d-block justify-content-center border-top border-2 top-line"
+            ></div>
+            <p class="fs-4 mt-3 hleft-line">
+              Electrophoresis Results of Structures Generated by Annealing
+              Protocol 2
+            </p>
+            We present the agarose gel electrophoresis results of structures
+            generated by Annealing Protocol 2 in Figure 3.
+            <img
+              src="./images/sifig3.png"
+              class="d-block mx-auto"
+              style="max-width: 600px; width: 100%"
+            />
+            <p style="text-align: center">
+              Fig.3 The Electrophoresis Results of Structures Generated by
+              Annealing Protocol 2
+            </p>
+            The band with a MgCl2 concentration of 17.5mM is prominently
+            visible. Annealing Protocol 2 is a universally applicable annealing
+            protocol for 3D DNA origami, and, in practice, we proceeded with
+            experiments using Annealing Protocol 1, which is likely to be more
+            optimized.
+            <p class="fs-4 mt-3 hleft-line">
+              The Agarose Gel Electrophoresis Results After Purification by
+              Ultrafiltration
+            </p>
+            Illustrated in Figure 4 is the agarose gel electrophoresis result
+            following purification by ultrafiltration.
             <img
               src="./images/sifig4.png"
               class="d-block mx-auto"
               style="max-width: 600px; width: 100%"
             />
             <p style="text-align: center">
-              Fig.4 限外ろ過による精製後の電気泳動結果
+              Fig.4 The Electrophoresis Results After Purification by
+              Ultrafiltration
             </p>
-            目的の構造体を形成していないstapleに加えて、目的の構造体そのものも取り除かれてしまっていることが分かる。塩濃度が高いため、限外ろ過による収率が低いのだと考えられる。次の実験ではゲル切り出しで精製した。
-            <div class="col-md-1"></div>
+            It is evident that not only the intended structures but also some of
+            the staples responsible for forming the target structure have been
+            removed. This could be attributed to the high salt concentration,
+            which is believed to have resulted in a low yield through
+            ultrafiltration. In the subsequent experiment, purification was
+            carried out using gel extraction.
           </div>
-          <div class="row mt-5">
-            <div class="col-md-1"></div>
-            <div class="col-md-10">
-              <div class="fs-2 fw-bold hline mx-auto" id="ds">
-                Material &amp; Methods
-              </div>
-            </div>
-            <div class="col-md-1"></div>
-          </div>
-          <div class="row">
-            <div class="col-md-1"></div>
-            <div class="col-md-10">
-              <img
-                src="./images/sifig5.png"
-                class="d-block mx-auto"
-                style="max-width: 600px; width: 100%"
-              />
-              <p style="text-align: center">Fig.5 溶液調製の組成</p>
-              <img
-                src="./images/sifig6.png"
-                class="d-block mx-auto"
-                style="max-width: 600px; width: 100%"
-              />
-              <p style="text-align: center">Fig.6 アニーリングプロトコル</p>
-              <img
-                src="./images/sifig7.png"
-                class="d-block mx-auto"
-                style="max-width: 600px; width: 100%"
-              />
-              <p style="text-align: center">Fig.7 アガロースゲルの組成</p>
-              <img
-                src="./images/sifig8.png"
-                class="d-block mx-auto"
-                style="max-width: 600px; width: 100%"
-              />
-              <p style="text-align: center">
-                Fig.8 ポリアクリルアミドゲルの組成
-              </p>
-            </div>
-            <div class="col-md-1"></div>
-          </div>
+          <div class="col-md-1"></div>
         </div>
-        <div class="col-md-1"></div>
+        <div class="row mt-5">
+          <div class="col-md-1"></div>
+          <div class="col-md-10">
+            <div class="fs-2 fw-bold hline mx-auto" id="mm">
+              Material &amp; Methods
+            </div>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-10">
+            <img
+              src="./images/sifig5.png"
+              class="d-block mx-auto"
+              style="max-width: 600px; width: 100%"
+            />
+            <p style="text-align: center">
+              Fig.5 The Composition of the Solution Preparation
+            </p>
+            <img
+              src="./images/sifig6.png"
+              class="d-block mx-auto"
+              style="max-width: 600px; width: 100%"
+            />
+            <p style="text-align: center">Fig.6 Annealing Control</p>
+            <img
+              src="./images/sifig7.png"
+              class="d-block mx-auto"
+              style="max-width: 600px; width: 100%"
+            />
+            <p style="text-align: center">
+              Fig.7 The Composition of Agarose Gel
+            </p>
+            <img
+              src="./images/sifig8.png"
+              class="d-block mx-auto"
+              style="max-width: 600px; width: 100%"
+            />
+            <p style="text-align: center">
+              Fig.8 The Composition of Polyacrylamide Gel
+            </p>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
       </div>
     </div>
     <!--footer-->
