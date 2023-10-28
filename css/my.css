@@ -169,7 +169,7 @@ model-viewer {
   font-size: 26px;
   text-align: center;
   border-bottom: 3px solid #dddddd;
-  border-image: radial-gradient(#dddddd 65%, #f0fff0) 1;
+  border-image: radial-gradient(#dddddd 65%, #fff) 1;
 }
 
 .hline::after {
