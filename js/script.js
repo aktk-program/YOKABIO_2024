@@ -11,11 +11,11 @@ document.addEventListener("DOMContentLoaded", function () {
       flag -= 1;
     }
     if (flag == 0) {
-      h_name.textContent = "6 form";
+      h_name.textContent = "8 vertex form";
     } else if (flag == 1) {
       h_name.textContent = "intermediate";
     } else {
-      h_name.textContent = "8 form";
+      h_name.textContent = "6 vertex form";
     }
     var elements = document.getElementsByClassName("element");
     for (var i = 0; i < elements.length; i++) {
@@ -37,11 +37,11 @@ document.addEventListener("DOMContentLoaded", function () {
       flag += 1;
     }
     if (flag == 0) {
-      h_name.textContent = "6 form";
+      h_name.textContent = "8 vertex form";
     } else if (flag == 1) {
       h_name.textContent = "intermediate";
     } else {
-      h_name.textContent = "8 form";
+      h_name.textContent = "6 vertex form";
     }
     var elements = document.getElementsByClassName("element");
     for (var i = 0; i < elements.length; i++) {
