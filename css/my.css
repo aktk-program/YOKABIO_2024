@@ -264,13 +264,24 @@ a {
 }
 
 /*3Dモデル表示*/
-#lazy-load-poster,
+#lazy-load-poster {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("./../images/1HB.png");
+}
 #lazy-load-poster2 {
   position: absolute;
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
+  background-image: url("./../images/4HB2.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
