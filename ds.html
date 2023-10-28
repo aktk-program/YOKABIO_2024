@@ -175,12 +175,27 @@
         </div>
         <div class="col-md-5 text-break d-block">
           <model-viewer
-            alt="cat"
-            src="./images/1HB_4.glb"
+            id="lazy-load"
             auto-rotate
             camera-controls
             rotation-per-second="300%"
-          ></model-viewer>
+            touch-action="pan-y"
+            reveal="manual"
+            src="./images/1HB_4.glb"
+            alt="A 3D model of a damaged helmet"
+          >
+            <div id="lazy-load-poster" slot="poster"></div>
+            <div id="button-load" slot="poster" style="text-align: center">
+              Load 3D Model
+            </div>
+          </model-viewer>
+          <script>
+            document
+              .querySelector("#button-load")
+              .addEventListener("click", () =>
+                document.querySelector("#lazy-load").dismissPoster()
+              );
+          </script>
           <p style="text-align: center">
             Fig.1 Dodecahedral Structure<br />
             Observation of this 3D model is possible through dragging.<br />
@@ -214,12 +229,27 @@
         </div>
         <div class="col-md-4">
           <model-viewer
-            alt="cat"
-            src="./images/4HB2.glb"
+            id="lazy-load2"
             auto-rotate
             camera-controls
             rotation-per-second="300%"
-          ></model-viewer>
+            touch-action="pan-y"
+            reveal="manual"
+            src="./images/4HB2.glb"
+            alt="A 3D model of a damaged helmet"
+          >
+            <div id="lazy-load-poster2" slot="poster"></div>
+            <div id="button-load2" slot="poster" style="text-align: center">
+              Load 3D Model
+            </div>
+          </model-viewer>
+          <script>
+            document
+              .querySelector("#button-load2")
+              .addEventListener("click", () =>
+                document.querySelector("#lazy-load2").dismissPoster()
+              );
+          </script>
           <p style="text-align: center">
             Fig.3 4 Helix Bundle Model<br />
             Observation of this 3D model is possible through dragging.
@@ -488,7 +518,7 @@
     ></script>
     <script
       type="module"
-      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"
     ></script>
     <script src="./js/script.js"></script>
   </body>
