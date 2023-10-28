@@ -193,9 +193,19 @@
           1nt当たりの長さを0.7
           nmとすると、必要なヒンジの塩基数は、最低で5ntである。
           <p class="fs-4 mt-3 hleft-line">設計されたファイル</p>
-          最終的な設計ファイル（右上のgithubアイコンから移動した場所に格納されています。）<br />
-          VertexSwitcher_structure.json<br />
-          VertexSwithcer_sequence.xisx
+          最終的な設計ファイル<br />
+          <a
+            href="./data/VertexSwitcher.json"
+            download
+            style="text-decoration: underline"
+            >VertexSwitcher_structure.json</a
+          ><br /><a
+            href="./data/VertexSwitcher_sequence.xlsx"
+            download
+            style="text-decoration: underline"
+          >
+            VertexSwithcer_sequence.xisx</a
+          >
         </div>
         <div class="col-md-1"></div>
       </div>
@@ -228,6 +238,30 @@
           relaxationおよびMD
           relaxationと呼ばれる短時間の計算によって構造の無理を解消する。その後、MD
           simulationにより構造の時間変化を計算する。
+          <video
+            src="./movies/sifig2.gif"
+            class="d-block mx-auto"
+            loop
+            muted
+            autoplay
+          ></video>
+          <p style="text-align: center">
+            Fig.2 ヒンジ10nt中間体のMD simulation
+          </p>
+          <a
+            href="./data/input_MD_intermediate"
+            download
+            style="text-decoration: underline"
+            >中間体のMD simulationインプットファイル</a
+          >
+
+          <p class="fs-4 mt-3 hleft-line">RMSFによる安定性評価</p>
+          oxDNAによるシミュレーション後のデータをもとにRMSF値を算出し、安定性を評価した。RMSFはRoot
+          Mean Square of Fluctuationの略で、MD
+          simulationによって得られる粒子の揺らぎを、その粒子の平均位置からのズレ(標準偏差)によって表したものである。我々はRMSF値の大小に応じてカラーマップ化を行なうpythonプログラムを作成し、それを用いて視覚的に判断した。
+          <a href="./data/RMSF.py" download style="text-decoration: underline"
+            >python file</a
+          >
         </div>
         <div class="col-md-1"></div>
       </div>
