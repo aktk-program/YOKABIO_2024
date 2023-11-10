@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (flag == 0) {
       h_name.textContent = "8 vertex form";
     } else if (flag == 1) {
-      h_name.textContent = "intermediate";
+      h_name.textContent = "Intermediate";
     } else {
       h_name.textContent = "6 vertex form";
     }
@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (flag == 0) {
       h_name.textContent = "8 vertex form";
     } else if (flag == 1) {
-      h_name.textContent = "intermediate";
+      h_name.textContent = "Intermediate";
     } else {
       h_name.textContent = "6 vertex form";
     }
