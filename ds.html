@@ -488,6 +488,32 @@
         <div class="col-md-1"></div>
       </div>
     </div>
+    <dvi class="container-fluid">
+      <div class="row">        
+        <model-viewer
+        id="lazy-load3"
+        auto-rotate
+        camera-controls
+        rotation-per-second="300%"
+        touch-action="pan-y"
+        reveal="auto"
+        src="./images/4HB 8vertex2.glb"
+        alt="A 3D model of a damaged helmet"
+      >
+      <div id="lazy-load-poster3" slot="poster"></div>
+            <div id="button-load3" slot="poster" style="text-align: center">
+              Ready for 3D Model<br />Click or Tap
+            </div>
+      </model-viewer>
+      <script>
+        document
+          .querySelector("#button-load3")
+          .addEventListener("click", () =>
+            document.querySelector("#lazy-load3").dismissPoster()
+          );
+      </script>
+      </div>
+    </dvi>
 
     <!--footer-->
     <div class="container-fluid" style="background-color: #333">
