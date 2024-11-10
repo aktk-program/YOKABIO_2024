@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
+    <title>YOKABIO | Design</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -40,10 +40,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a
-                class="nav-link fw-bold nav-now"
-                aria-current="page"
-                href="index.html"
+              <a class="nav-link nav-tx" aria-current="page" href="index.html"
                 >HOME</a
               >
             </li>
@@ -51,16 +48,14 @@
               <a class="nav-link nav-tx" href="project.html">PROJECT</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-tx" href="design.html">DESIGN</a>
+              <a class="nav-link nav-tx" href="ds.html"
+                >DESIGN &amp; SIMULATION</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-tx" href="simulation.html">SIMULATION</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-tx" href="result.html">RESULT</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-tx" href="discussion.html">DISCUSSION</a>
+              <a class="nav-link nav-tx" href="rd.html"
+                >RESULT &amp; DISCUSSION</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link nav-tx" href="future.html">FUTURE</a>
@@ -136,184 +131,149 @@
           <div
             class="fs-6 text-break mb-2 d-block justify-content-center border-top border-2 top-line"
           >
-            We designed the Vertex-Switcher utilizing caDNAno. <br />For a more
-            comprehensive explanation, please refer to <br /><a
-              href="si.html"
-              style="text-decoration: underline"
-              >（SI Appendix, section1）.</a
-            >
+            The KIT-D structure was designed using caDNAno, taking inspiration
+            from the mechanism of Kresling folding, which resembles Miura
+            folding. The structural framework was informed by the 2018 Team
+            Sendai project [1].
           </div>
         </div>
         <div class="col-md-1"></div>
       </div>
 
-      <div class="row mb-4">
+      <div class="row mb-2">
         <div class="col-md-1"></div>
         <div class="col-md-5">
-          <p class="fs-4 mt-3 hleft-line">
-            Basic frame work of Vertex-Switcher using wireframe DNA oriagmi
-          </p>
-          The default structure of Vertex-Switcher is a rhombic dodecahedron.
-          This structure has six X-shaped vertices (Vertex Group X), each
-          composed of four edges, and eight Y-shaped vertices (Vertex Group Y),
-          each formed by three edges. By closing one of the Vertex Groups X or
-          Y, the other vertex group retracts inside the structure, resulting in
-          a structure with a different number of vertices. The addition of
-          mechanism that enable such transformations allows us to consider the
-          rhombic dodecahedron as an intermediate form that can transition
-          between a hexahedral and an octahedral structure. We created this
-          intermediate using wireframe DNA origami. Wireframe DNA origami
-          creates a wireframe structure by hybridization of one long ssDNA
-          (scaffold) to many short ssDNAs (staple). The length of one edge of
-          this structure is about 25 nm, and the size of the intermediate
-          structure is about 50 nm.<br /><br />
+          <p class="fs-4 mt-3 hleft-line">Basic framework of KIT-D (angles)</p>
         </div>
-        <div class="col-md-5 text-break d-block">
-          <model-viewer
-            id="lazy-load"
-            auto-rotate
-            camera-controls
-            rotation-per-second="300%"
-            touch-action="pan-y"
-            reveal="manual"
-            src="./images/1HB_4.glb"
-            alt="A 3D model of a damaged helmet"
-          >
-            <div id="lazy-load-poster" slot="poster"></div>
-            <div id="button-load" slot="poster" style="text-align: center">
-              Ready for 3D Model<br />Click or Tap
-            </div>
-          </model-viewer>
-          <script>
-            document
-              .querySelector("#button-load")
-              .addEventListener("click", () =>
-                document.querySelector("#lazy-load").dismissPoster()
-              );
-          </script>
-          <p style="text-align: center">
-            Fig.1 Dodecahedral Structure<br />
-            Observation of this 3D model is possible through dragging.<br />
-          </p>
+        <div class="col-md-6"></div>
+      </div>
+
+      <div class="row mb-2">
+        <div class="col-md-1"></div>
+        <div class="col-md-5">
+          The core framework of KIT-D was constructed by arranging a series of
+          parallelograms composed of two opposing triangles in sequence. A
+          unique aspect of Kresling folding is that the angle of each small
+          triangle impacts key structural characteristics, such as the number of
+          faces per layer and the degree of rotational folding. In Kresling
+          folding, a reduced number of faces increases folding difficulty, while
+          more faces ease the folding process. To balance folding energy, the
+          outer circumference was designed as a regular hexagon, providing
+          optimal energy for folding—neither too rigid nor too flexible.
+          Additionally, this hexagonal shape enhances visual recognition of
+          changes in tube length and inner diameter. Specifically, the inner
+          diameter is influenced by the parallelogram defined by the two
+          triangles and the external angle at the parallelogram’s base. The
+          smaller triangle angle also dictates the shape of the outer
+          circumference; an isosceles triangle yields a regular polygon. For a
+          triangle with a smaller angle of n°, the outer perimeter will form a
+          polygon with 180/n number of sides. Based on these principles, the
+          smaller angle was set to 30°, with the parallelogram’s external angle
+          close to 120°.
+        </div>
+
+        <div class="col-md-5">
+          <img src="./images/dsfig7.png" class="img-fluid w-100" />
+          <p style="text-align: center; margin-bottom: 0%">Fig_test.<br /></p>
+          <p style="font-size: 10px; text-align: center">sentence_test<br /></p>
         </div>
         <div class="col-md-1"></div>
       </div>
 
-      <div class="row mb-4">
+      <div class="row mb-2">
         <div class="col-md-1"></div>
-        <div class="col-md-4">
+        <div class="col-md-5">
           <p class="fs-4 mt-3 hleft-line">
-            4 helix Bundle for High rigidity edge
-          </p>
-          The goal of our project is to create DNA nanostructures that can be
-          transformed into structures with different numbers of vertices by
-          closing the vertices. However, if the structure consists of a single
-          helix per edge, the edge may be deformed during the transformation.
-          Therefore, to create DNA nanostructures that work as designed, the
-          edges must be rigid structures. We ensured rigidity by constructing
-          the edges of the structure with 4Helix Bundle. The 4 helix bundle is a
-          structure of four DNA helices bound together by a crossover of staple
-          strands and has higher stiffness than a single DNA helix.<br />
-        </div>
-        <div class="col-md-2">
-          <img
-            src="./images/dsfig2.png"
-            style="max-width: 50%"
-            class="img-fluid w-100 d-flex mx-auto d-md-none"
-          />
-          <img
-            src="./images/dsfig2.png"
-            style="max-width: 100%"
-            class="img-fluid w-100 d-flex mx-auto d-none d-md-block"
-          />
-          <p style="text-align: center">Fig.2 4 Helix Bundle</p>
-        </div>
-        <div class="col-md-4">
-          <model-viewer
-            id="lazy-load2"
-            auto-rotate
-            camera-controls
-            rotation-per-second="300%"
-            touch-action="pan-y"
-            reveal="manual"
-            src="./images/4HB2.glb"
-            alt="A 3D model of a damaged helmet"
-          >
-            <div id="lazy-load-poster2" slot="poster"></div>
-            <div id="button-load2" slot="poster" style="text-align: center">
-              Ready for 3D Model<br />Click or Tap
-            </div>
-          </model-viewer>
-          <script>
-            document
-              .querySelector("#button-load2")
-              .addEventListener("click", () =>
-                document.querySelector("#lazy-load2").dismissPoster()
-              );
-          </script>
-          <p style="text-align: center">
-            Fig.3 4 Helix Bundle Model<br />
-            Observation of this 3D model is possible through dragging.
+            Two-layered structure to enhance rigidity
           </p>
         </div>
-        <div class="col-md-1"></div>
+        <div class="col-md-6"></div>
       </div>
 
       <div class="row">
         <div class="col-md-1"></div>
-        <div class="col-md-5">
-          <p class="fs-4 mt-3 hleft-line">
-            Strand displacement reaction for transformation the structure
-          </p>
-          To enable the transformation from an intermediate form to other form,
-          a specific angle-closing mechanism is necessary. We used the chain
-          replacement mechanism for this purpose [2]. The mechanism consists of
-          following components, including ssDNA (fastening-DNA) extending from
-          each edge, ssDNA (close-DNA) that binds with fastening-DNA from
-          opposing edges to close the angle, and signal DNA (open-DNA) that
-          unites ssDNA strands. When close-DNA is added to the structure,
-          open-DNA forms a double helix to bridge neighboring edges, pulling
-          them closer and close the angle of vertex. By closing vertex group X,
-          or Y in this way, vertices belonging to the other vertex group fall
-          into the center of the structure to form a structure with a different
-          number of vertices. When open-DNA is added to the structure with some
-          of the vertices closed as described above, the open-DNA and close-DNA
-          form a double strand, and the close-DNA is removed from the open-close
-          mechanism ssDNA by strand displacement reaction, opening the angle of
-          vertex. In this way, the DNA with its angle of all vertices opened
-          returns to the intermediate form. Then, by adding close-DNA to that
-          structure, it again becomes a structure with a different number of
-          vertices.<br />
-        </div>
-        <div class="col-md-5">
-          <img src="./images/dsfig4.png" class="img-fluid w-100" />
-          <p style="text-align: center">Fig.4 Strand displacement<br /></p>
+        <div class="col-md-10">
+          <div
+            class="fs-6 text-break mb-2 d-block justify-content-center border-2 top-line"
+          >
+            To reinforce structural rigidity, KIT-D employs a dual-layered
+            configuration, providing stability that is challenging to achieve
+            with a single-layered model. This dual-layer design not only
+            enhances resistance to external forces but also increases durability
+            and adaptability across different environmental conditions. Each
+            structural face has a two-DNA-layer thickness, corresponding to 4
+            nanometers. This was achieved by twisting the scaffold DNA and
+            securing it with staple strands. The bilayer configuration also
+            introduces a distinction between the top and bottom of each face,
+            facilitating controlled hinge and latch mechanisms, which will be
+            elaborated upon below.
+          </div>
         </div>
         <div class="col-md-1"></div>
       </div>
 
-      <div class="row">
+      <div class="row mb-2">
         <div class="col-md-1"></div>
         <div class="col-md-5">
           <p class="fs-4 mt-3 hleft-line">
-            Extension of hinges for improved mobility
+            Adjusting the length and position of the hinges
           </p>
-
-          In order to bring the edges closer together and close the angle of
-          vertices, it is necessary to extend the length of the hinge portion
-          connecting the edges to improve mobility. According to our
-          calculations, the minimum necessary hinge length to constrict the
-          angles formed by the edges to 30 degrees was approximately equal to 5
-          nucleotides of single-stranded DNA (ssDNA) [3]. Using this as a
-          reference, we created following three patterns of hinge length to
-          explore the optimal hinge length.: 3 nt (unaltered from the structure
-          of the previous study), 6 nt (minimum length required for expected
-          structural transformation), and 10 nt (sufficient length for
-          structural transformation).<br />
         </div>
+        <div class="col-md-6"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <div
+            class="fs-6 text-break mb-2 d-block justify-content-center border-2 top-line"
+          >
+            To optimize the structural mobility, careful adjustments were made
+            to the length and placement of hinges, which introduce flexibility
+            and enable precise angular adjustments at targeted structural sites.
+            Mountain fold hinges, for instance, are positioned exclusively on
+            one face of the dual-layer structure, which has a thickness of
+            approximately 4 nm. Each hinge, with a length of 3 nucleotides,
+            attaches to only one of these two layers, creating an asymmetry that
+            directs the folding in a specific orientation. This configuration
+            facilitates easier folding in the intended direction while
+            preserving rigidity in the opposite direction.
+          </div>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+
+      <div class="row mb-2">
+        <div class="col-md-1"></div>
         <div class="col-md-5">
-          <img src="./images/dsfig5.png" class="img-fluid w-100" />
-          <p style="text-align: center">Fig.5 Hinge Elongation<br /></p>
+          <p class="fs-4 mt-3 hleft-line">
+            Structural Design for Transformation (Latch)
+          </p>
+        </div>
+        <div class="col-md-6"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <div
+            class="fs-6 text-break mb-2 d-block justify-content-center border-2 top-line"
+          >
+            A latch mechanism was integrated to stabilize the structure during
+            transformation. Each triangular unit features a latch attached to
+            the tips of two opposing, inverted triangles. In their default
+            state, these latches exist as free single strands, each anchored at
+            one end. When a complementary single strand, referred to as “close,”
+            is introduced, it hybridizes with both latches, pulling the upper
+            and lower triangles together and shifting the structure into a
+            closed configuration. To enable controlled detachment, an additional
+            strand, “anti-close,” can be introduced. Anti-close is fully
+            complementary to close, allowing it to hybridize and displace close
+            from the latches, effectively releasing the structure back to its
+            open state. Various latch lengths were tested to optimize the
+            balance between structural stability and the visibility of the
+            deformation process.
+          </div>
         </div>
         <div class="col-md-1"></div>
       </div>
@@ -332,18 +292,53 @@
 
       <div class="row mb-3">
         <div class="col-md-1"></div>
-        <div class="col-md-10">
-          <div
-            class="fs-6 text-break mb-2 d-block justify-content-center border-top border-2 top-line"
-          >
-            We confirmed the validity of the designed structure through
-            simulation, employing oxDNA and NUPACK. <br />For a more detailed
-            explanation, please refer to <br /><a
-              href="si.html#section2"
-              style="text-decoration: underline"
-              >（SI Appendix, section2）.</a
-            >
-          </div>
+        <div
+          class="col-md-5 fs-6 text-break mb-2 d-block justify-content-center border-top border-2 top-line"
+        >
+          MD simulations using oxDNA were used to evaluate the stability of the
+          designed intermediate structure based on RMSF data. rmsf is a measure
+          of the degree of particle fluctuation, with smaller values indicating
+          a more stable structure. a color-coded map based on RMSF values is
+          shown. However, overall structural integrity is maintained, suggesting
+          consistent stiffness levels.
+        </div>
+        <div
+          class="col-md-5 fs-6 text-break mb-2 d-block justify-content-center border-top border-2 top-line"
+        >
+          <img src="./images/dsfig7.png" class="img-fluid w-100" />
+          <p style="text-align: center; margin-bottom: 0%">Fig_test.<br /></p>
+          <p style="font-size: 10px; text-align: center">sentence_test<br /></p>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+      <div class="row mb-2">
+        <div class="col-md-1"></div>
+        <div class="col-md-5">
+          <p class="fs-4 mt-3 hleft-line">
+            Evaluation of Internal Circular Area Based on Folded Structure
+            (Latch Length)
+          </p>
+        </div>
+        <div class="col-md-6"></div>
+      </div>
+
+      <div class="row mb-2">
+        <div class="col-md-1"></div>
+        <div class="col-md-5">
+          The internal circular area was calculated by measuring the short and
+          long axes of the inner diameter using the OAT distance. The short and
+          long axes handled in this study are the average values output when
+          using the OAT distance. The length of each latch was compared with the
+          size of the internal area. Five configurations were compared: no
+          latch, latch 9n, latch 12n, latch 15n and latch 21n. With the
+          exception of latch 9n, it was observed that the shorter the latch
+          length, the smaller the internal area.　
+        </div>
+
+        <div class="col-md-5">
+          <img src="./images/dsfig7.png" class="img-fluid w-100" />
+          <p style="text-align: center; margin-bottom: 0%">Fig_test.<br /></p>
+          <p style="font-size: 10px; text-align: center">sentence_test<br /></p>
         </div>
         <div class="col-md-1"></div>
       </div>
@@ -351,89 +346,39 @@
       <div class="row mb-2">
         <div class="col-md-1"></div>
         <div class="col-md-5">
-          <p class="fs-4 mt-3 hleft-line">
-            Stability evaluation of the intermediate form
-          </p>
-          We assessed the stability of the designed intermediate structure
-          through MD simulation utilizing oxDNA, and evaluated it based on RMSF
-          data. RMSF serves as an indicator of the magnitude of particle
-          fluctuations, with smaller values indicative of structural stability.
-          A color-coded map based on RMSF values is presented in Fig. 5. It is
-          evident that as the hinge length increases, particle fluctuations
-          become more pronounced. Nevertheless, the overall structural integrity
-          is maintained, suggesting a consistent level of rigidity.<br />.
-        </div>
-        <div class="col-md-5 text-break d-block">
-          <img src="./images/dsfig6.png" class="img-fluid w-100" />
-          <p style="text-align: center; margin-bottom: 0%">
-            Fig.6 The stability of the intermediate state.<br />
-          </p>
-          <p style="font-size: 10px; text-align: center">
-            The magnitude of particle fluctuations is illustrated for each hinge
-            length.<br />
-            The hinge lengths correspond to a) 3 nucleotides, b) 6 nucleotides,
-            and c) 10 nucleotides.<br />
-          </p>
-        </div>
-        <div class="col-md-1"></div>
-      </div>
-
-      <div class="row mb-2">
-        <div class="col-md-1"></div>
-        <div class="col-md-5">
-          <p class="fs-4 mt-3 hleft-line">
-            Analysis of secondary structures created by strand displacement
-          </p>
-          We verified whether the intended strand displacement occurred for the
-          designed sequences using NUPACK. Different sequences are employed to
-          constrict the angles for forming a hexahedron with six vertices and an
-          octahedron with eight vertices. The results of the verification for
-          the minimum free energy structures at each 4°C are presented in Fig.
-          6. From the free energy values, it can be inferred that both close-DNA
-          strands are capable of binding to fastening-DNA and further, with a
-          higher affinity, to open-DNA.<br />
+          <img src="./images/dsfig7.png" class="img-fluid w-100" />
+          <p style="text-align: center; margin-bottom: 0%">Fig_test.<br /></p>
+          <p style="font-size: 10px; text-align: center">sentence_test<br /></p>
         </div>
         <div class="col-md-5">
           <img src="./images/dsfig7.png" class="img-fluid w-100" />
-          <p style="text-align: center; margin-bottom: 0%">
-            Fig.7 Confirmation of strand displacement.<br />
-          </p>
-          <p style="font-size: 10px; text-align: center">
-            a) Strand displacement for the formation of a hexahedron with six
-            vertices, <br />b) Strand displacement for the formation of a
-            hexahedron with eight vertices <br />
-          </p>
+          <p style="text-align: center; margin-bottom: 0%">Fig_test.<br /></p>
+          <p style="font-size: 10px; text-align: center">sentence_test<br /></p>
         </div>
         <div class="col-md-1"></div>
       </div>
 
-      <div class="row pb-3">
+      <div class="row mb-2">
         <div class="col-md-1"></div>
         <div class="col-md-5">
-          <p class="fs-4 mt-3 hleft-line">
-            Stability evaluation after transformation
-          </p>
-          The intermediate state undergoes transformation into either a
-          hexahedron with six vertices or an octahedron with eight vertices
-          through strand displacement. To assess the stability of each
-          structure, molecular dynamics (MD) simulations were conducted using
-          oxDNA, and their evaluation was based on Root-Mean-Square Fluctuation
-          (RMSF) data. A color-coded map, based on RMSF values, is presented in
-          Fig. 7. It can be observed that these structures remain stable even
-          when compared to the intermediate state. Due to time constraints, the
-          assessment of structural stability was focused on the 10-nucleotide
-          hinge, which was the least stable in the results of the intermediate
-          state's rigidity confirmation.<br />
+          <img src="./images/dsfig7.png" class="img-fluid w-100" />
+          <p style="text-align: center; margin-bottom: 0%">Fig_test.<br /></p>
+          <p style="font-size: 10px; text-align: center">sentence_test<br /></p>
         </div>
         <div class="col-md-5">
-          <img src="./images/dsfig8.png" class="img-fluid w-100" />
-          <p style="text-align: center; margin-bottom: 0%">
-            Fig.8 Stability After Transformation<br />
-          </p>
-          <p style="font-size: 10px; text-align: center">
-            Illustrating Particle Fluctuations After the Deformation of the 10nt
-            Hinge Structure<br />
-          </p>
+          <img src="./images/dsfig7.png" class="img-fluid w-100" />
+          <p style="text-align: center; margin-bottom: 0%">Fig_test.<br /></p>
+          <p style="font-size: 10px; text-align: center">sentence_test<br /></p>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+
+      <div class="row mb-2">
+        <div class="col-md-1"></div>
+        <div class="col-md-5">
+          <img src="./images/dsfig7.png" class="img-fluid w-100" />
+          <p style="text-align: center; margin-bottom: 0%">Fig_test.<br /></p>
+          <p style="font-size: 10px; text-align: center">sentence_test<br /></p>
         </div>
         <div class="col-md-1"></div>
       </div>
@@ -476,43 +421,6 @@
           </div>
         </div>
         <div class="col-md-1"></div>
-      </div>
-    </div>
-    <div class="container-fluid">
-      <div class="row">
-        4HB 8vertex2
-        <model-viewer
-          id="lazy-load3"
-          camera-controls
-          rotation-per-second="300%"
-          touch-action="pan-y"
-          reveal="auto"
-          src="./images/4HB 8vertex2.glb"
-          alt="A 3D model of a damaged helmet"
-        >
-        </model-viewer>
-        open
-        <model-viewer
-          id="lazy-load4"
-          camera-controls
-          rotation-per-second="300%"
-          touch-action="pan-y"
-          reveal="auto"
-          src="./images/20240818_VS_OPEN_gray.glb"
-          alt="A 3D model of a damaged helmet"
-        >
-        </model-viewer>
-        close
-        <model-viewer
-          id="lazy-load5"
-          camera-controls
-          rotation-per-second="300%"
-          touch-action="pan-y"
-          reveal="auto"
-          src="./images/20240818_VS_CLOSE_gray.glb"
-          alt="A 3D model of a damaged helmet"
-        >
-        </model-viewer>
       </div>
     </div>
 

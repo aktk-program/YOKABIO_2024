@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Result and Discussion</title>
+    <title>Design</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -40,10 +40,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a
-                class="nav-link fw-bold nav-now"
-                aria-current="page"
-                href="index.html"
+              <a class="nav-link nav-tx" aria-current="page" href="index.html"
                 >HOME</a
               >
             </li>
@@ -51,16 +48,14 @@
               <a class="nav-link nav-tx" href="project.html">PROJECT</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-tx" href="design.html">DESIGN</a>
+              <a class="nav-link nav-tx" href="ds.html"
+                >DESIGN &amp; SIMULATION</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-tx" href="simulation.html">SIMULATION</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-tx" href="result.html">RESULT</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-tx" href="discussion.html">DISCUSSION</a>
+              <a class="nav-link nav-tx" href="rd.html"
+                >RESULT &amp; DISCUSSION</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link nav-tx" href="future.html">FUTURE</a>
@@ -115,219 +110,219 @@
         <div class="col-md-1"></div>
         <div class="col-md-10">
           <div class="fs-2 fw-bold hline mx-auto" id="ds">
-            Result &amp; Discussion<br />
+            Design &amp; Simulation<br />
+          </div>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <div class="fs-3 mt-3 title-margin fw-bold" id="design">
+            Simulation<br />
           </div>
         </div>
         <div class="col-md-1"></div>
       </div>
 
-      <div class="row mb-4">
+      <div class="row">
         <div class="col-md-1"></div>
         <div class="col-md-10">
-          <p class="fs-4 mt-3 hleft-line">
-            Search for optimal conditions for structure formation
-          </p>
-          To create DNA origami structures, optimization of conditions is
-          necessary. We sought the optimal conditions for the formation of the
-          initial structure of Vertex-Switcher, which is the intermediate state.
-          The conditions we examined include the length of hinges connecting the
-          edges, MgCl2 concentration, and annealing protocol. Fig. 1 illustrates
-          the patterns of each condition.<br />
-          <img
-            src="./images/rdfig1.png"
-            class="d-block mx-auto"
-            style="max-width: 800px; width: 100%"
-          />
-          <p style="text-align: center">
-            Fig.1 The type used for experimentation to explore optimal
-            conditions
-          </p>
-          When the hinge is short, the edge's mobility decreases, but when the
-          hinge is long, structural stability is compromised. We experimented
-          with three patterns, primarily focused on the minimum hinge length
-          required to narrow the angle to 30° (SI Appendix, Section1-4). Mg+
-          ions neutralize the negative charges of DNA and contribute to
-          structural formation. We tested four different concentrations based on
-          previous research [1]. Two annealing protocols were examined, one
-          following prior research [1] and another universal for 3D DNA origami
-          [2]. We confirmed the products of all 24 patterns using agarose gel
-          electrophoresis. In terms of the annealing protocol, since structures
-          were successfully formed with either method, we determined that the
-          annealing protocol derived from previous research [1] is more
-          suitable. The results of annealing protocol 1 are presented in Fig.
-          2.<br />
-          <img
-            src="./images/rdfig2.png"
-            class="d-block mx-auto"
-            style="max-width: 900px; width: 100%"
-          />
-          <p style="text-align: center">
-            Fig.2 Comparing products for each condition through agarose gel
-            electrophoresis
-          </p>
-          The electrophoresis results bear similarities to previous research
-          [1], suggesting the formation of intermediates. It is presumed that
-          the intermediates are located near the 3 kbp region in each lane.
-          Multiple bands situated above them are believed to be oligomers that
-          formed during the intermediate's assembly process. Furthermore, bands
-          below the 1 kbp mark are thought to result from the binding of
-          mini-scaffolds (SI Appendix, Section 1-2) and staples to each other.
-          In terms of band intensity, lanes with a 3 nt hinge exhibit denser
-          bands, and lanes with a 22.5 mM MgCl2 concentration also show
-          prominent bands.<br /><br /><br />The structures confirmed to be
-          formed by the above electrophoresis were observed by TEM to confirm
-          that the structures were formed as designed. The positions of the
-          vertices were then read from the TEM images and the approximate shape
-          of the structure photographed was deduced. The structures with hinge
-          lengths of 3 nt/6 nt/10 nt generated by annealing protocol 1/ MgCl2
-          concentration of 22.5 mM produced by ultrafiltration as samples were
-          observed, respectively. As a result, an intermediate was identified in
-          the 3 nt/10 nt hinge length sample
-          <img
-            src="./images/rdfig3.png"
-            class="d-block mx-auto"
-            style="max-width: 1000px; width: 100%"
-          />
-          <p style="text-align: center">
-            Fig.3 The structure of Hinge 3nt generated with Annealing Protocol 1
-            and a MgCl2 concentration of 22.5mM
-          </p>
-          An image clearly showing the edges and vertices of the intermediate
-          form has been observed. The presence of X-shaped vertices suggests
-          that the structure adheres to the grid in a manner similar to Fig.3-f.
+          <div
+            class="fs-6 text-break mb-2 d-block justify-content-center border-top border-2 top-line"
+          ></div>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+      <div class="row mb-2">
+        <div class="col-md-1"></div>
+        <div class="col-md-5">
+          <p class="fs-4 mt-3 hleft-line">構造形成条件の最適化</p>
+        </div>
+        <div class="col-md-6"></div>
+      </div>
 
-          <img
-            src="./images/rdfig4.png"
-            class="d-block mx-auto"
-            style="max-width: 1000px; width: 100%"
-          />
-          <p style="text-align: center">
-            Fig.4 The structure of hinge 10nt generated under annealing protocol
-            1 and a MgCl2 concentration of 22.5mM
-          </p>
-          An image containing three internal spaces was observed. The nearly
-          straight alignment of Edges 4 and 9 indicates that the central vertex
-          is of group X. The presence of X-shaped vertices at the center of the
-          structure suggests that the structure adheres to the grid in a manner
-          resembling Fig. 5-3. Additionally, the indistinct outlines of edges
-          near the image's periphery suggest that edges may overlap during grid
-          adhesion.<br />
+      <div class="row mb-2">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          DNA折り紙構造の形成には構造形成条件の最適化が必要である．閉じる機能を持たない簡単なKIT-Dで最適な構造形成条件を模索した．塩濃度，アニーリングプロトコルを変えて実験した．<br />
+        </div>
+        <div class="col-md-1"></div>
+      </div>
 
+      <div class="row mb-2">
+        <div class="col-md-1"></div>
+        <div class="col-md-5">
+          <div class="row mb-2"></div>
+          <img src="./images/dsfig7.png" class="img-fluid w-100" />
+          <p style="text-align: center; margin-bottom: 0%">
+            Fig.7 Confirmation of strand displacement.<br />
+          </p>
+          <p style="font-size: 10px; text-align: center">
+            a) Strand displacement for the formation of a hexahedron with six
+            vertices, <br />b) Strand displacement for the formation of a
+            hexahedron with eight vertices <br />
+          </p>
+          <div class="row mb-2"></div>
+          <img src="./images/dsfig7.png" class="img-fluid w-100" />
+          <p style="text-align: center; margin-bottom: 0%">
+            Fig.7 Confirmation of strand displacement.<br />
+          </p>
+          <p style="font-size: 10px; text-align: center">
+            a) Strand displacement for the formation of a hexahedron with six
+            vertices, <br />b) Strand displacement for the formation of a
+            hexahedron with eight vertices <br />
+          </p>
+          <div class="row mb-2"></div>
+          <img src="./images/dsfig7.png" class="img-fluid w-100" />
+          <p style="text-align: center; margin-bottom: 0%">
+            Fig.7 Confirmation of strand displacement.<br />
+          </p>
+          <p style="font-size: 10px; text-align: center">
+            a) Strand displacement for the formation of a hexahedron with six
+            vertices, <br />b) Strand displacement for the formation of a
+            hexahedron with eight vertices <br />
+          </p>
+        </div>
+        <div class="col-md-5">
+          <img src="./images/dsfig7.png" class="img-fluid w-100" />
+          <p style="text-align: center; margin-bottom: 0%">
+            Fig.7 Confirmation of strand displacement.<br />
+          </p>
+          <p style="font-size: 10px; text-align: center">
+            a) Strand displacement for the formation of a hexahedron with six
+            vertices, <br />b) Strand displacement for the formation of a
+            hexahedron with eight vertices <br />
+          </p>
+          -Dで最適な構造形成条件を模索した．塩濃度，アニーリングプロトコルを変えて実験した．<br />
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <div class="fs-3 mt-1 title-margin fw-bold scroll" id="simulation">
+            Discussion<br />
+          </div>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <div
+            class="fs-6 text-break mb-2 d-block justify-content-center border-top border-2 top-line"
+          ></div>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+
+      <div class="row mb-2">
+        <div class="col-md-1"></div>
+        <div class="col-md-5">
+          <p class="fs-4 mt-3 hleft-line">構造形成の最適条件の探索</p>
+        </div>
+        <div class="col-md-6"></div>
+      </div>
+
+      <div class="row mb-2">
+        <div class="col-md-1"></div>
+        <div class="col-md-5">test<br /></div>
+
+        <div class="col-md-5">
+          <img src="./images/dsfig7.png" class="img-fluid w-100" />
+          <p style="text-align: center; margin-bottom: 0%">
+            Fig.7 Confirmation of strand displacement.<br />
+          </p>
+          <p style="font-size: 10px; text-align: center">
+            a) Strand displacement for the formation of a hexahedron with six
+            vertices, <br />b) Strand displacement for the formation of a
+            hexahedron with eight vertices <br />
+          </p>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+
+      <div class="row mb-2">
+        <div class="col-md-1"></div>
+        <div class="col-md-5">
           <p class="fs-4 mt-3 hleft-line">
-            Demonstration of chain displacement reaction
+            構造が形作られているかの探索（平面＆環状）
           </p>
-          The transformation mechanism of the Vertex-Switcher involves altering
-          the distance between the edges of the structure through chain
-          replacement. Polyacrylamide gel electrophoresis was conducted using
-          staples that are involved in chain replacement to demonstrate the
-          occurrence of chain replacement. The electrophoresis results are shown
-          in Fig.5.<br /><br />
-          <img
-            src="./images/rdfig5.png"
-            class="d-block mx-auto"
-            style="max-width: 1000px; width: 100%"
-          />
-          <p style="text-align: center">
-            Fig.5 Demonstration of strand displacement through polyacrylamide
-            gel electrophoresis
+        </div>
+        <div class="col-md-6"></div>
+      </div>
+
+      <div class="row mb-2">
+        <div class="col-md-1"></div>
+        <div class="col-md-5">test2<br /></div>
+
+        <div class="col-md-5">
+          <img src="./images/dsfig7.png" class="img-fluid w-100" />
+          <p style="text-align: center; margin-bottom: 0%">
+            Fig.7 Confirmation of strand displacement.<br />
           </p>
-          Chain replacement was observed in both the transformations between the
-          intermediate and the 6-vertex structure, and between the intermediate
-          and the 8-vertex structure. In samples with the addition of close-DNA,
-          bands appear at higher positions due to the binding between close-DNA
-          and fastening-DNA. Furthermore, in samples with the addition of
-          open-DNA, bands corresponding to waste appear as close-DNA and
-          open-DNA bind. However, in the chain replacement for the
-          transformation between the intermediate and the 6-vertex structure,
-          even with the addition of open-DNA, the bands at higher positions did
-          not disappear. Therefore, it is suggested that the 6-vertex structure
-          may have difficulty returning to the intermediate state.<br />
-          <p class="fs-4 mt-3 hleft-line">
-            Confirmation of transformation from intermediate form to closed form
+          <p style="font-size: 10px; text-align: center">
+            a) Strand displacement for the formation of a hexahedron with six
+            vertices, <br />b) Strand displacement for the formation of a
+            hexahedron with eight vertices <br />
           </p>
-          The Vertex-Switcher undergoes transformation by adding specific ssDNA
-          to the intermediate state. The generation of the intermediate state
-          was confirmed by TEM. Therefore, under similar conditions, we
-          attempted to create the intermediate state once again and added
-          close-DNA to explore the production of 6-vertex and 8-vertex
-          structures. Intermediate states with hinge lengths of 3nt, 6nt, and
-          10nt were generated under Annealing Protocol 1 and a salt
-          concentration of 22.5mM, followed by purification using gel excision.
-          Gel excision was chosen for purification due to the low yield of
-          purification via tangential flow filtration (SI Appendix, Section3-2).
-          After purification via gel excision, close-DNA was added. The results
-          of agarose gel electrophoresis for each sample are presented in
-          Fig.6.<br />
-          Regarding the 10nt hinge, the position of the bands in the sample with
-          added close-DNA has changed. Therefore, it is believed that structural
-          changes are significant in the intermediate state with a 10nt hinge
-          when close-DNA is added to this sample, and this sample was observed
-          using TEM.<br />
-          <img
-            src="./images/rdfig6.png"
-            class="d-block mx-auto"
-            style="max-width: 1000px; width: 100%"
-          />
-          <p style="text-align: center">
-            Fig.6 Confirmation of the structural transition from the hinge 10nt
-            intermediate structure to the 6-vertex structure
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+
+      <div class="row mb-2">
+        <div class="col-md-1"></div>
+        <div class="col-md-5">
+          <p class="fs-4 mt-3 hleft-line">連鎖置換反応の実証（電気泳動結果）</p>
+        </div>
+        <div class="col-md-6"></div>
+      </div>
+
+      <div class="row mb-2">
+        <div class="col-md-1"></div>
+        <div class="col-md-5">test3<br /></div>
+
+        <div class="col-md-5">
+          <img src="./images/dsfig7.png" class="img-fluid w-100" />
+          <p style="text-align: center; margin-bottom: 0%">
+            Fig.7 Confirmation of strand displacement.<br />
           </p>
-          Based on the results of electrophoresis in Fig. 6, we thought that the
-          structural change was more pronounced in the sample in which close-DNA
-          was added to the hinge 10 nt intermediate, and this sample was
-          observed by TEM.
-          <img
-            src="./images/rdfig7.png"
-            class="d-block mx-auto"
-            style="max-width: 1000px; width: 100%"
-          />
-          <p style="text-align: center">
-            Fig.7 Verification of the structural transition from the hinge 10nt
-            intermediate structure to the 6-vertex structure
+          <p style="font-size: 10px; text-align: center">
+            a) Strand displacement for the formation of a hexahedron with six
+            vertices, <br />b) Strand displacement for the formation of a
+            hexahedron with eight vertices <br />
           </p>
-          TEM observation. The structure derived from the observed images
-          suggests that the structure is anchored to the grid as shown in Fig.
-          7-f.
-          <p class="fs-4 mt-3 hleft-line">
-            Confirmation of transformation from closed form to intermediate form
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+
+      <div class="row mb-2">
+        <div class="col-md-1"></div>
+        <div class="col-md-5">
+          <p class="fs-4 mt-3 hleft-line">状態推移の確認</p>
+        </div>
+        <div class="col-md-6"></div>
+      </div>
+
+      <div class="row mb-2">
+        <div class="col-md-1"></div>
+        <div class="col-md-5">test4<br /></div>
+
+        <div class="col-md-5">
+          <img src="./images/dsfig7.png" class="img-fluid w-100" />
+          <p style="text-align: center; margin-bottom: 0%">
+            Fig.7 Confirmation of strand displacement.<br />
           </p>
-          The Vertex-Switcher for 6-vertex and 8-vertex structures undergoes
-          structural changes to an intermediate state by adding specific ssDNA.
-          To verify the reversibility of these transformations, we conducted an
-          operation to return the previously confirmed 6-vertex hinge 10nt
-          structure to the intermediate state by adding open-DNA. The resulting
-          structures from this operation were observed using TEM to confirm if
-          the 6-vertex structure reverted to the intermediate state.<br />
-          <img
-            src="./images/rdfig8.png"
-            class="d-block mx-auto"
-            style="max-width: 800px; width: 100%"
-          />
-          <p style="text-align: center">
-            Fig.8 Confirmation of structural transition from the 6-vertex
-            structure of hinge 10nt to the intermediate form
+          <p style="font-size: 10px; text-align: center">
+            a) Strand displacement for the formation of a hexahedron with six
+            vertices, <br />b) Strand displacement for the formation of a
+            hexahedron with eight vertices <br />
           </p>
-          We observed structures with edges and vertices. However, the observed
-          images display structures distinct from those seen in Fig. 3-a and
-          Fig. 4-a. Additionally, in both Fig.8-a and Fig.8-b, unlike the
-          deformed 6-vertex structure in Fig. 7, there are gaps between the
-          edges. Therefore, it is assumed that only some vertices have been
-          opened by open-DNA. There are two conceivable reasons for this.
-          Firstly, the non-uniform orientation of the toehold when close-DNA
-          binds to fastening-DNA. Fastening-DNA is not uniformly designed due to
-          several constraints (SI Appendix, Section1-3). Vertices with toeholds
-          that act as footholds to remove close-DNA, oriented towards the
-          outside of the structure, are more likely to open, whereas those
-          oriented towards the inside of the structure are less likely to open.
-          To resolve this issue, it may be necessary to reconsider the design of
-          fastening-DNA and the 4 Helix Bundle. Secondly, the chains used for
-          the transformation to the 6-vertex structure may not be completely
-          removed. The results in Fig. 5 suggest the possibility that the chain
-          replacement required for transforming to the 6-vertex structure may
-          not have occurred in its entirety. Although we were unable to do so in
-          this instance due to time constraints, comparing the samples that were
-          transformed to the intermediate state with the 8-vertex structure
-          could verify this hypothesis.<br />
         </div>
         <div class="col-md-1"></div>
       </div>
@@ -353,14 +348,18 @@
       <div class="row">
         <div class="col-md-1"></div>
         <div class="col-md-10 mb-4">
-          <div class="fs-6 text-break mb-2 d-block">
+          <div class="fs-6 text-break mb-2 d-block justify-content-center">
             [1] M. Lolaico et al, Computer-Aided Design of A-Trail Routed
             Wireframe DNA Nanostructures with Square Lattice Edges,
             <i><b>ACS Nano</b></i
-            >, 2024, 17, 7, 6565–6574 <br />[2] I Kawamata, Y Suzuki, and S
-            Satoshi, 2021,
-            <i
-              ><b>DNA origami 入門－基礎から学ぶDNAナノ構造体の設計技法－</b></i
+            >, 2024, 17, 7, 6565–6574<br />
+            [2] Jong-Shik Shin and Niles A. Pierce, A Synthetic DNA Walker for
+            Molecular Transport,
+            <i><b>J. Am. Chem. Soc</b></i
+            >, 2004, 126, 35, 10834–10835<br />
+            [3] I Kawamata, Y Suzuki, and S Satoshi, 2021,
+            <b
+              ><i>DNA origami 入門－基礎から学ぶDNAナノ構造体の設計技法－</i></b
             >
             Tokyo: Ohmsha
           </div>
@@ -391,7 +390,7 @@
     ></script>
     <script
       type="module"
-      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"
     ></script>
     <script src="./js/script.js"></script>
   </body>
