@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Project</title>
+    <title>YOKABIO2024 | Project</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -132,34 +132,10 @@
         <div
           class="col-md-8 text-break mb-2 d-block justify-content-center border-top border-2 top-line"
         >
-          Nanotechnology is the realm of technological prowess dedicated to the
-          manipulation of materials at the nanoscale, encompassing entities such
-          as molecules and atoms. It boasts the capacity to construct arbitrary
-          two-dimensional and three-dimensional structures, offering the promise
-          of novel materials, innovative devices, and envisioning applications
-          in the realm of nanorobotic therapies. At present, an ingenious
-          technique known as 'structural DNA nanotechnology' has been devised
-          for the purpose of fabricating nanoscale structures employing DNA as
-          the primary material. This approach capitalizes on the autonomous
-          formation of double-helical structures stemming from the
-          complementarity of Watson-Crick base pairs, thereby enabling the
-          semi-autonomous construction of intricate structures.<br /><br />
-          DNA origami, another innovative technique, involves the folding of DNA
-          to craft arbitrary two- and three-dimensional structures. As an
-          applied technology within structural DNA nanotechnology, it employs a
-          singular elongated DNA strand, known as the 'staple strand,' to define
-          the shape of the intended nanoscale construct. To stabilize this
-          structure, an abundance of shorter clamping DNA strands, referred to
-          as 'scaffold strands,' is used. By meticulously regulating
-          temperature, including both heating and cooling processes, the
-          extended DNA strand is precisely molded into a configuration mirroring
-          the original design. <br /><br />In the dynamic field of
-          nanotechnology, novel structural proposals surface on a daily basis,
-          encompassing a plethora of deformable structures. However, structures
-          with varying vertex numbers have not yet been introduced. The
-          introduction of fresh structural designs is anticipated to serve as a
-          catalyst for the advancement of diverse nanotechnologies. Hence, we
-          have presented structures like those in this project.<br /><br />
+          ナノスケールでの精密な構造制御技術は近年急速に進化しており、その中でも特にDNAオリガミ技術を用いることで、分子輸送、センサー、フィルタリング機能を持つデバイスなど、用途に応じた形状や機能を持つ構造体が精密に作成できるようになっている。
+          DNAオリガミ技術は、一本の長いDNA鎖（scaffold）と、それを折り畳むための補助鎖（staple）から構成されており、相補性を利用して二次元や三次元の複雑な形状を自在に作り出すことができる。scaffoldの特定の部分に結合するstaple鎖がscaffoldを固定することで、目的の形を実現し、staple鎖の数や配置を工夫することで構造体の剛性や安定性を制御できる。
+          これまでにも、孔のサイズを制御することで特定の大きさの物質を制限する人工的なチャネルがDNAオリガミ技術で作られてきた例がある[引用]。しかし、これらは主にサイズ固定の構造であり、制御範囲が限られていた。
+          今回設計するKIT-Dは、従来技術では実現が難しかった「内径」と「長さ」の両方の変化が可能である点が新規性となっている。この可変性により、KIT-Dはより幅広い条件や用途に応じて構造を変化させることができる可能性が期待される。
         </div>
         <div class="col-md-2"></div>
       </div>
@@ -182,16 +158,8 @@
         <div
           class="col-md-8 text-break mb-2 d-block justify-content-center border-top border-2 top-line"
         >
-          One of the most famous nanostructures using DNA is the DNA BOX. The
-          DNA BOX changes its structure when it receives a signal. DNA BOX is
-          expected to be applied to drug delivery. However, in the medical
-          field, nanodevices with more complex functions are required, and their
-          application has not progressed. We propose a DNA nanostructure with a
-          varying number of vertices as a solution to this problem. Our
-          structure, which applies the theory of duality, has a complex function
-          in which the number of vertices changes depending on the signal. This
-          structure, "Vertex-Switcher," will accelerate the application of DNA
-          nanotechnology to the real world.
+          今回の構造体は「径」と「長さ」の両方を動的に制御できる。これは、過去のnanoporeといった人工的な筒状構造と比較して、適応性に優れている。この構造体KIT-Dは様々な環境に適応する必要がある医療分野、ひいては実社会においてDNAナノテクノロジーの実用化を促進することを期待している。<br /><br />
+
           <video
             src="./movies/project1.mp4"
             class="w-100 pb-3"
@@ -221,43 +189,21 @@
         <div
           class="col-md-8 text-break mb-2 d-block justify-content-center border-top border-2 top-line"
         >
-          The basic goal of our project is to construct a vertex-switcher that
-          can change the structure of six vertex form, eight vertex form, and
-          intermediate form. To achieve this goal, we set the following three
-          milestones.<br /><br />
-          <b>① Design of vertex-switcher</b><br />
-          ☑ design of transformative mechanism<br />
-          First, the basic structure of the vertex-switcher, the intermediate
-          form, was designed using the wire frame DNA origami as the basic
-          framework. In addition, we designed a mechanism using strand
-          displacement reactions to achieve structural transformation.<br /><br />
-
-          <b
-            >② Evaluation of structural stability of vertex-switcher in
-            sillico</b
-          ><br />
-          ☑ intermediate from<br />
-          ☑ 6 vertex form<br />
-          ☑ 8 vertex form<br />
-          To confirm the stability of the designed structures, we conducted MD
-          simulations of three forms of structures, 6 vertex form, 8 vertex
-          form, and intermediate form, using oxDNA.<br /><br />
-
-          <b> ③ Construction and Confirming of vertex-switcher</b><br />
-          ☑ intermediate form<br />
-          ☑ intermediate from → 6 vertex form<br />
-          ☑ intermediate from → 8 vertex form<br />
-          <b>□</b> 6 vertex form → intermediate from → 8 vertex form<br />
-          <b>□</b> 8 vertex form → intermediate from → 6 vertex form<br />
-
-          To confirm the structural transformation in the in vitro experiment,
-          we conducted electrophoresis and TEM observation.<br /><br />
-          In summary, we were able to achieve most of the milestones we set
-          using in silico and in vitro experiments. However, we were not able to
-          confirm the complete structural transformation, although we obtained
-          results suggesting a multi-step structural transformation from a
-          6-vertex form to an intermediate from to an 8-vertex form in some
-          parts of the structure.
+          私達はマイルストーンとして、小ユニット、連結したユニット、円柱状構造、可変構造の4つを設定した。<br />
+          小ユニット<br />
+          連結したユニットを優先して設計、シミュレーションした関係上、このユニットの設計とシミュレーションは自動的に達成された。<br />
+          □観察 <br />
+          連結したユニット <br />
+          caDNAno <br />□設計 <br />□シミュレーション<br />
+          □観察<br />
+          円柱状構造<br />
+          □設計<br />
+          □シミュレーション<br />
+          □観察<br />
+          可変構造<br />
+          □設計<br />
+          □シミュレーション<br />
+          □観察
         </div>
         <div class="col-md-2"></div>
       </div>
