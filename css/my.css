@@ -25,7 +25,7 @@ body {
 .nav-tx {
   color: #333;
   text-underline-offset: 0.4em;
-  --bs-navbar-active-color: #00a551;
+  --bs-navbar-active-color: #6495ed;
 }
 .nav-tx:link {
   color: #333;
@@ -34,16 +34,19 @@ body {
   color: #333;
 }
 .nav-tx:hover {
-  color: #00a551;
+  color: #6495ed;
   transition: 0.2s;
   text-decoration: underline;
   text-decoration-thickness: 2px;
 }
 .nav-now {
-  color: #00a551;
+  color: #6495ed;
+  text-underline-offset: 0.2em;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
 }
 .nav-now:hover {
-  color: #00a551;
+  color: #6495ed;
 }
 .navbar-toggler {
   border-color: #afb4db;
@@ -55,7 +58,7 @@ body {
   display: block;
 }
 .dropdown:hover > .dropdown-toggle {
-  color: #00a551;
+  color: #6495ed;
   transition: 0.2s;
   text-decoration: underline;
   text-decoration-thickness: 2px;
@@ -67,7 +70,7 @@ body {
   border-radius: 0px;
 }
 .dropdown-menu > li > a:hover {
-  color: #00a551; /* This has an effect */
+  color: #6495ed; /* This has an effect */
   background-color: #fff; /* This has an effect */
   transition: 0.2s;
   text-decoration: underline;
@@ -83,7 +86,7 @@ body {
 
 /*フッター*/
 .footer {
-  background-color: #00a551;
+  background-color: #6495ed;
   color: #fff;
 }
 
@@ -173,7 +176,7 @@ model-viewer {
   font-size: 26px;
   text-align: center;
   border-bottom: 3px solid #dddddd;
-  border-image: radial-gradient(#dddddd 65%, #fff) 1;
+  border-image: radial-gradient(#dddddd 65%, #e4fffc) 1;
 }
 
 .hline::after {
@@ -184,7 +187,7 @@ model-viewer {
   transform: translateX(-50%);
   width: 70px;
   height: 3px;
-  background-color: #00a551;
+  background-color: #6495ed;
 }
 
 .ex-back {
@@ -341,11 +344,15 @@ a {
   margin: 20px auto; /* 上下のマージンを追加し、自動で左右のマージンを設定 */
 }
 
+#slider {
+  width: 25%;
+}
+
 #slider::before {
   content: "←"; /* 擬似要素を表示 */
   position: absolute; /* 絶対位置で配置 */
   top: 50%; /* 縦中央に配置 */
-  left: -25px; /* 左に10pxずらす */
+  left: -7%; /* 左に10pxずらす */
   width: 20px; /* 幅 */
   height: 27px; /* 高さ */
   transform: translateY(-50%); /* 縦方向で中央に位置を調整 */
@@ -355,7 +362,7 @@ a {
   content: "→"; /* 擬似要素を表示 */
   position: absolute; /* 絶対位置で配置 */
   top: 50%; /* 縦中央に配置 */
-  left: 135px; /* 左に10pxずらす */
+  left: 103%; /* 左に10pxずらす */
   width: 20px; /* 幅 */
   height: 27px; /* 高さ */
   transform: translateY(-50%); /* 縦方向で中央に位置を調整 */
