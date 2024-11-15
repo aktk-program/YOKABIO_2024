@@ -24,8 +24,11 @@
     >
       <div class="container-fluid">
         <a class="navbar-brand" style="color: #333" href="index.html"
-          >YOKABIO 2024</a
-        >
+          ><img
+            class="navbar-brand ms-2"
+            src="images/YOKABIO2024.png"
+            style="height: 2vw"
+        /></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -109,7 +112,7 @@
       <div class="row">
         <div class="col-md-1"></div>
         <div class="col-md-10">
-          <div class="fs-2 fw-bold hline mx-auto" id="ds">
+          <div class="fs-2 fw-bold hline mx-auto mt-4" id="ds">
             Design &amp; Simulation<br />
           </div>
         </div>
@@ -132,8 +135,13 @@
             class="fs-6 text-break mb-2 d-block justify-content-center border-top border-2 top-line"
           >
             The KIT-D structure was designed using caDNAno, taking inspiration
-            from the mechanism of Kresling folding, which resembles Miura
-            folding. The structural framework was informed by the 2018 Team
+            from the mechanism of an origami folding method called Kresling
+            folding. Kresling folding is a pattern of periodic concavo-convex
+            folds that fold a piece of paper into a tube without cutting or
+            adding parts. The basic mechanism of Kresling folding is similar to
+            that of another folding method called Miura folding in which a paper
+            is folded with periodical concavo-convex folds. We referenced the
+            basic design of Miura folding made with DNA origami by the 2018 Team
             Sendai project [1].
           </div>
         </div>
@@ -143,39 +151,77 @@
       <div class="row mb-2">
         <div class="col-md-1"></div>
         <div class="col-md-5">
-          <p class="fs-4 mt-3 hleft-line">Basic framework of KIT-D (angles)</p>
+          <p class="fs-4 mt-3 hleft-line">
+            Determining the aspect of the structure
+          </p>
         </div>
         <div class="col-md-6"></div>
       </div>
 
       <div class="row mb-2">
         <div class="col-md-1"></div>
+        <div class="col-md-10">
+          The major advantage of Kresling folding is its ability to adjust the
+          tube length and inner diameter. In Kresling folding, the addition of
+          faces creates additional creases, making the folding process easier,
+          while fewer faces increase folding difficulty. Using paper models, we
+          sought for a shape that requires enough rigidity for transformation
+          while having enough flexibility to fold in, resulting in the outer
+          circumference to be designed as a regular hexagon (figure 1). This
+          hexagonal shape also has the benefit of retaining enough area of both
+          the structure and the inner hole when in the closed form, making it
+          easier to recognize the structure when observing.
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+
+      <div class="row mb-2">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <img src="https://placehold.jp/750x450.png" class="img-fluid w-100" />
+          <p style="text-align: center; margin-bottom: 0%">
+            Figure 1. The basic dimensions of KIT-D<br />
+          </p>
+          <p style="font-size: 13px; text-align: center">
+            This figure shows the dimensions of the KIT-D structure. It is made
+            of a series of six parallelograms composed of two isoceles triangles
+            which are placed back to back. The parallelogram unit can be rolled
+            up into a tubular structure with height ranging from nearly 0 to 18
+            nm, and its inner diameter changing from 23 to 42 nm. <br />
+          </p>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+
+      <div class="row mb-2">
+        <div class="col-md-1"></div>
         <div class="col-md-5">
           The core framework of KIT-D was constructed by arranging a series of
-          parallelograms composed of two opposing triangles in sequence. A
-          unique aspect of Kresling folding is that the angle of each small
-          triangle impacts key structural characteristics, such as the number of
-          faces per layer and the degree of rotational folding. In Kresling
-          folding, a reduced number of faces increases folding difficulty, while
-          more faces ease the folding process. To balance folding energy, the
-          outer circumference was designed as a regular hexagon, providing
-          optimal energy for folding—neither too rigid nor too flexible.
-          Additionally, this hexagonal shape enhances visual recognition of
-          changes in tube length and inner diameter. Specifically, the inner
-          diameter is influenced by the parallelogram defined by the two
-          triangles and the external angle at the parallelogram’s base. The
-          smaller triangle angle also dictates the shape of the outer
-          circumference; an isosceles triangle yields a regular polygon. For a
-          triangle with a smaller angle of n°, the outer perimeter will form a
-          polygon with 180/n number of sides. Based on these principles, the
-          smaller angle was set to 30°, with the parallelogram’s external angle
-          close to 120°.
+          parallelograms composed of two opposing triangles. A unique aspect of
+          Kresling folding is that the angle of each small triangle and the
+          angle that the parallelogram composes with the base impact key
+          structural characteristics. Specifically, the length of the inner
+          diameter is influenced by the external angle at the parallelogram’s
+          base, which is represented as x in figure 2. The smaller triangle
+          angle, shown as y in figure 2, also dictates the shape of the outer
+          perimeter. For example, an isosceles triangle yields a regular
+          polygon. For a triangle with a smaller angle of n°, the outer
+          perimeter will form a polygon with 180/n number of sides. Based on
+          these principles, the smaller angle was set to 30°, with the
+          parallelogram’s external angle close to 120°.
         </div>
 
         <div class="col-md-5">
           <img src="https://placehold.jp/750x450.png" class="img-fluid w-100" />
-          <p style="text-align: center; margin-bottom: 0%">Fig_test.<br /></p>
-          <p style="font-size: 10px; text-align: center">sentence_test<br /></p>
+          <p style="text-align: center; margin-bottom: 0%">
+            Figure 2. Angles of parallelogram related to structure formation<br />
+          </p>
+          <p style="font-size: 13px; text-align: center">
+            The angle shown as x affects the size of the inner diameter of the
+            Kresling pattern. The angle shown in y is known to determine the
+            shape of the outer perimeter, in which the outer perimeter forms a
+            polygon with 180/n number of sides, if y is n degrees. <br />
+          </p>
         </div>
         <div class="col-md-1"></div>
       </div>
@@ -190,57 +236,80 @@
         <div class="col-md-6"></div>
       </div>
 
-      <div class="row">
+      <div class="row mb-2">
         <div class="col-md-1"></div>
         <div class="col-md-10">
-          <div
-            class="fs-6 text-break mb-2 d-block justify-content-center border-2 top-line"
-          >
-            To reinforce structural rigidity, KIT-D employs a dual-layered
-            configuration, providing stability that is challenging to achieve
-            with a single-layered model. This dual-layer design not only
-            enhances resistance to external forces but also increases durability
-            and adaptability across different environmental conditions. Each
-            structural face has a two-DNA-layer thickness, corresponding to 4
-            nanometers. This was achieved by twisting the scaffold DNA and
-            securing it with staple strands. The bilayer configuration also
-            introduces a distinction between the top and bottom of each face,
-            facilitating controlled hinge and latch mechanisms, which will be
-            elaborated upon below.
-          </div>
+          To reinforce structural rigidity, KIT-D employs a dual-layered
+          configuration. This two-layer is designed to enhance durability
+          compared to a single-layered structure. Each structural face has a
+          two-DNA-layer thickness, corresponding to about 4 nanometers. This was
+          achieved by meandering the scaffold DNA and securing it with staple
+          strands. The bilayer configuration also introduces a distinction
+          between the top and bottom of each face, facilitating controlled hinge
+          and latch mechanisms, which will be elaborated upon below.
         </div>
         <div class="col-md-1"></div>
       </div>
 
       <div class="row mb-2">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <img src="https://placehold.jp/750x450.png" class="img-fluid w-100" />
+          <p style="text-align: center; margin-bottom: 0%">
+            Figure 3. Formation of the two-layered structure
+          </p>
+          <p style="font-size: 13px; text-align: center">
+            Staple strands were designed to fix the scaffold strand in a
+            meandering way to form two layers, providing durability to the
+            structure.
+            <br />
+          </p>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+
+      <div class="row mb-2">
         <div class="col-md-1"></div>
-        <div class="col-md-5">
+        <div class="col-md-6">
           <p class="fs-4 mt-3 hleft-line">
             Adjusting the length and position of the hinges
           </p>
         </div>
-        <div class="col-md-6"></div>
+        <div class="col-md-5"></div>
       </div>
 
-      <div class="row">
+      <div class="row mb-2">
         <div class="col-md-1"></div>
         <div class="col-md-10">
-          <div
-            class="fs-6 text-break mb-2 d-block justify-content-center border-2 top-line"
-          >
-            To optimize the structural mobility, careful adjustments were made
-            to the length and placement of hinges, which introduce flexibility
-            and enable precise angular adjustments at targeted structural sites.
-            Mountain fold hinges, for instance, are positioned exclusively on
-            one face of the dual-layer structure, which has a thickness of
-            approximately 4 nm. Each hinge, with a length of 3 nucleotides,
-            attaches to only one of these two layers, creating an asymmetry that
-            directs the folding in a specific orientation. This configuration
-            facilitates easier folding in the intended direction while
-            preserving rigidity in the opposite direction.
-          </div>
+          To optimize the structural mobility, careful adjustments were made to
+          the length and placement of hinges, which introduce flexibility and
+          enable precise angular adjustments at targeted structural sites. Each
+          hinge, with a length of 3 nucleotides, attaches to only one of these
+          two layers, creating an asymmetry that directs the folding in a
+          specific orientation (figure 4). This configuration facilitates easier
+          folding in the intended direction while preserving rigidity in the
+          opposite direction. This mechanism enables the adaptation of mountain
+          folds and valley folds in desired locations that are required for the
+          Kresling folding.
         </div>
         <div class="col-md-1"></div>
+      </div>
+
+      <div class="row mb-2">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <img src="https://placehold.jp/750x450.png" class="img-fluid w-100" />
+          <p style="text-align: center; margin-bottom: 0%">
+            Figure 4. Positioning of the hinges to guide folding direction
+            <br />
+          </p>
+          <p style="font-size: 13px; text-align: center">
+            Hinges were located on one side of the layer to navigate the
+            direction of the folding, enabling the implementation of mountain
+            and valley folds in desired positions. <br />
+          </p>
+        </div>
+        <div class="col-md-2"></div>
       </div>
 
       <div class="row mb-2">
@@ -259,23 +328,46 @@
           <div
             class="fs-6 text-break mb-2 d-block justify-content-center border-2 top-line"
           >
-            A latch mechanism was integrated to stabilize the structure during
-            transformation. Each triangular unit features a latch attached to
-            the tips of two opposing, inverted triangles. In their default
-            state, these latches exist as free single strands, each anchored at
-            one end. When a complementary single strand, referred to as “close,”
-            is introduced, it hybridizes with both latches, pulling the upper
-            and lower triangles together and shifting the structure into a
-            closed configuration. To enable controlled detachment, an additional
-            strand, “anti-close,” can be introduced. Anti-close is fully
+            A latch mechanism was integrated to stabilize the closed structure.
+            Each triangular unit features a latch attached to the tips of two
+            opposing, inverted triangles (figure 5a). In their default state,
+            these latches exist as free single strands, each anchored at one
+            end. In the open state, each face of the structure waver and
+            randomly takes different forms. When a complementary single strand,
+            referred to as “close,” is introduced, it hybridizes with both
+            latches when the top and bottom triangles are close to each other
+            during the random transformation, fixing the structure in a closed
+            state (figure 5b). To enable controlled detachment, an additional
+            strand, “anti-close,” can be introduced. Anti-close strand is fully
             complementary to close, allowing it to hybridize and displace close
-            from the latches, effectively releasing the structure back to its
-            open state. Various latch lengths were tested to optimize the
-            balance between structural stability and the visibility of the
-            deformation process.
+            strand from the latches, effectively releasing the structure back to
+            its open state (figure 5c). Various latch lengths were tested to
+            optimize the balance between structural stability and the visibility
+            of the deformation process.
           </div>
         </div>
         <div class="col-md-1"></div>
+      </div>
+
+      <div class="row mb-2">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <img src="https://placehold.jp/750x450.png" class="img-fluid w-100" />
+          <p style="text-align: center; margin-bottom: 0%">
+            Figure 5. Positioning of latches and transforming mechanism
+            <br />
+          </p>
+          <p style="font-size: 13px; text-align: center">
+            5a. shows that the latches are located at the tips of the
+            triangles.<br />
+            5b. illustrates how KIT-D closes when an additional strand “close”
+            is added. <br />
+            5c. shows the transformation of the structure to its open state when
+            “anti-close” is added.
+            <br />
+          </p>
+        </div>
+        <div class="col-md-2"></div>
       </div>
     </div>
 
@@ -295,19 +387,25 @@
         <div
           class="col-md-5 fs-6 text-break mb-2 d-block justify-content-center border-top border-2 top-line"
         >
-          MD simulations using oxDNA were used to evaluate the stability of the
-          designed intermediate structure based on RMSF data. rmsf is a measure
-          of the degree of particle fluctuation, with smaller values indicating
-          a more stable structure. a color-coded map based on RMSF values is
-          shown. However, overall structural integrity is maintained, suggesting
-          consistent stiffness levels.
+          We evaluated the stability of the designed KIT-D structure based on
+          RMSF data using MD simulations with oxDNA. RMSF serves as an indicator
+          of conformational fluctuation, with smaller values reflecting a more
+          stable structure. A color-coded map based on RMSF values is shown in
+          fig. 1. Although we designed the KIT-D to be flexible, the structure
+          maintained its entire shape, suggesting enough stability across the
+          structure. The no-latch design was shown here, but the stability date
+          for the other designs can be found in
+          <a href="si.html" style="text-decoration: underline; color: blue">
+            the supplementary materials</a
+          >.
         </div>
         <div
           class="col-md-5 fs-6 text-break mb-2 d-block justify-content-center border-top border-2 top-line"
         >
-          <img src="https://placehold.jp/750x450.png" class="img-fluid w-100" />
-          <p style="text-align: center; margin-bottom: 0%">Fig_test.<br /></p>
-          <p style="font-size: 10px; text-align: center">sentence_test<br /></p>
+          <img src="images/ds_fig6.png" class="img-fluid w-100" />
+          <p style="text-align: center; margin-bottom: 0%">
+            Fig 6. The stability of KIT-D<br />
+          </p>
         </div>
         <div class="col-md-1"></div>
       </div>
@@ -325,70 +423,59 @@
       <div class="row mb-2">
         <div class="col-md-1"></div>
         <div class="col-md-5">
-          The internal circular area was calculated by measuring the short and
-          long axes of the inner diameter using the OAT distance. The short and
-          long axes handled in this study are the average values output when
-          using the OAT distance. The length of each latch was compared with the
-          size of the internal area. Five configurations were compared: no
-          latch, latch 9n, latch 12n, latch 15n and latch 21n. With the
-          exception of latch 9n, it was observed that the shorter the latch
-          length, the smaller the internal area.　
+          To evaluate the inner-size differences depending on the latch design,
+          we calculated the internal area using the ellipse formula, a (short
+          axis) × b (long axis) × π. The internal area was determined by
+          measuring the short and long axes of the inner diameter with the oxDNA
+          analysis tool, where these axes represent half of the average values
+          measured. This internal area was then compared across five designs: no
+          latch, latch 9 nt, latch 12nt, latch 15 nt, and latch 21 nt. As shown
+          in Table 1 and Fig. 2-b, it was observed that shorter latch lengths
+          tend to result in smaller internal areas, and the no latch design
+          showed the highest value.
         </div>
 
         <div class="col-md-5">
-          <img src="https://placehold.jp/750x450.png" class="img-fluid w-100" />
-          <p style="text-align: center; margin-bottom: 0%">Fig_test.<br /></p>
-          <p style="font-size: 10px; text-align: center">sentence_test<br /></p>
+          <img src="images/ds_table1.png" class="img-fluid w-100" />
         </div>
         <div class="col-md-1"></div>
       </div>
+    </div>
 
-      <div class="row mb-2">
-        <div class="col-md-1"></div>
-        <div class="col-md-5">
-          <img src="https://placehold.jp/750x450.png" class="img-fluid w-100" />
-          <p style="text-align: center; margin-bottom: 0%">Fig_test.<br /></p>
-          <p style="font-size: 10px; text-align: center">sentence_test<br /></p>
-        </div>
-        <div class="col-md-5">
-          <img src="https://placehold.jp/750x450.png" class="img-fluid w-100" />
-          <p style="text-align: center; margin-bottom: 0%">Fig_test.<br /></p>
-          <p style="font-size: 10px; text-align: center">sentence_test<br /></p>
-        </div>
-        <div class="col-md-1"></div>
+    <div class="row mb-2">
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
+        <img src="images/ds_fig7.png" class="img-fluid w-100" />
+        <p style="text-align: center; margin-bottom: 0%">
+          Fig 7. a) Indication of long and short diameters,<br />b) Mean
+          internal area of each latch. Error bars indicate the standard
+          deviation of the area.
+          <br />
+        </p>
       </div>
+      <div class="col-md-2"></div>
+    </div>
 
-      <div class="row mb-2">
-        <div class="col-md-1"></div>
-        <div class="col-md-5">
-          <img src="https://placehold.jp/750x450.png" class="img-fluid w-100" />
-          <p style="text-align: center; margin-bottom: 0%">Fig_test.<br /></p>
-          <p style="font-size: 10px; text-align: center">sentence_test<br /></p>
-        </div>
-        <div class="col-md-5">
-          <img src="https://placehold.jp/750x450.png" class="img-fluid w-100" />
-          <p style="text-align: center; margin-bottom: 0%">Fig_test.<br /></p>
-          <p style="font-size: 10px; text-align: center">sentence_test<br /></p>
-        </div>
-        <div class="col-md-1"></div>
+    <div class="row mb-2">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        The inner area differences can be explained by the degree of the
+        valley-folding determined by the latch length. By valley-folding the two
+        faces to which each latch is connected, the faces protrude toward the
+        inside of the structure. The shorter the length of the latch, the
+        greater the protrusion of the two faces and the more they protrude
+        toward the inside, reducing the inner area. Thus, the latch
+        design-dependent differences in the inner area suggest that the inner
+        diameter of KIT-D can be adjusted using our design approach.
       </div>
-
-      <div class="row mb-2">
-        <div class="col-md-1"></div>
-        <div class="col-md-5">
-          <img src="https://placehold.jp/750x450.png" class="img-fluid w-100" />
-          <p style="text-align: center; margin-bottom: 0%">Fig_test.<br /></p>
-          <p style="font-size: 10px; text-align: center">sentence_test<br /></p>
-        </div>
-        <div class="col-md-1"></div>
-      </div>
+      <div class="col-md-1"></div>
     </div>
 
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-1"></div>
         <div class="col-md-10">
-          <div class="fw-bold fs-3 mt-4 title-margin">Refference</div>
+          <div class="fw-bold fs-3 mt-4 title-margin">Reference</div>
         </div>
         <div class="col-md-1"></div>
       </div>
@@ -405,19 +492,10 @@
         <div class="col-md-1"></div>
         <div class="col-md-10 mb-4">
           <div class="fs-6 text-break mb-2 d-block justify-content-center">
-            [1] M. Lolaico et al, Computer-Aided Design of A-Trail Routed
-            Wireframe DNA Nanostructures with Square Lattice Edges,
-            <i><b>ACS Nano</b></i
-            >, 2024, 17, 7, 6565–6574<br />
-            [2] Jong-Shik Shin and Niles A. Pierce, A Synthetic DNA Walker for
-            Molecular Transport,
-            <i><b>J. Am. Chem. Soc</b></i
-            >, 2004, 126, 35, 10834–10835<br />
-            [3] I Kawamata, Y Suzuki, and S Satoshi, 2021,
-            <b
-              ><i>DNA origami 入門－基礎から学ぶDNAナノ構造体の設計技法－</i></b
-            >
-            Tokyo: Ohmsha
+            [1]Team Sendai 2018. “DNA Transfolder | TeamSendai 2018.”
+            Bitbucket.io, 2018,
+            biomodteamsendai2018.bitbucket.io/wiki/design.html. <br />Accessed
+            15 Nov. 2024.
           </div>
         </div>
         <div class="col-md-1"></div>
@@ -427,7 +505,7 @@
     <!--footer-->
     <div class="container-fluid" style="background-color: #333">
       <div class="row align-items-center">
-        <div class="footer fixed-bottom">©BIOMOD 2024 YOKABIO</div>
+        <div class="footer">©BIOMOD 2024 YOKABIO</div>
       </div>
     </div>
 
