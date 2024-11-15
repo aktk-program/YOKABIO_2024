@@ -116,7 +116,8 @@
         <div class="col-md-1"></div>
         <div class="col-md-10">
           <div class="fs-2 fw-bold hline mx-auto mt-4" id="ds">
-            Project<br />
+            Background and problems
+            <br />
           </div>
         </div>
         <div class="col-md-1"></div>
@@ -135,10 +136,54 @@
         <div
           class="col-md-8 text-break mb-2 d-block justify-content-center border-top border-2 top-line"
         >
-          ナノスケールでの精密な構造制御技術は近年急速に進化しており、その中でも特にDNAオリガミ技術を用いることで、分子輸送、センサー、フィルタリング機能を持つデバイスなど、用途に応じた形状や機能を持つ構造体が精密に作成できるようになっている。
-          DNAオリガミ技術は、一本の長いDNA鎖（scaffold）と、それを折り畳むための補助鎖（staple）から構成されており、相補性を利用して二次元や三次元の複雑な形状を自在に作り出すことができる。scaffoldの特定の部分に結合するstaple鎖がscaffoldを固定することで、目的の形を実現し、staple鎖の数や配置を工夫することで構造体の剛性や安定性を制御できる。
-          これまでにも、孔のサイズを制御することで特定の大きさの物質を制限する人工的なチャネルがDNAオリガミ技術で作られてきた例がある[引用]。しかし、これらは主にサイズ固定の構造であり、制御範囲が限られていた。
-          今回設計するKIT-Dは、従来技術では実現が難しかった「内径」と「長さ」の両方の変化が可能である点が新規性となっている。この可変性により、KIT-Dはより幅広い条件や用途に応じて構造を変化させることができる可能性が期待される。
+          Recent advancements in precise structural control at the nanoscale
+          have rapidly progressed, particularly through the use of DNA origami
+          technology , which allows for the precise construction of structures
+          with specific shapes and functions tailored for various applications,
+          such as molecular transport, sensing, and filtration devices [1]. DNA,
+          through the Watson-Crick base pairing mechanism, self-assembles with
+          nanometer-level precision. Chemical modifications and functional
+          molecules can also be incorporated into the design, underscoring the
+          potential of this field of research. <br /><br />
+          DNA origami technology [2] is composed of a single long DNA strand
+          (scaffold) and auxiliary strands (staples) that fold the scaffold. By
+          leveraging sequence complementarity, this method enables the creation
+          of intricate two- and three-dimensional shapes. The rigidity and
+          stability of the structures can be controlled by adjusting the number
+          and arrangement of staple strands.<br /><br />
+          Currently, a variety of structures utilizing DNA origami have been
+          proposed, such as functional molecular robots [3], DNA-based logic
+          circuits that operate as electrical alternatives [4], and cylindrical
+          structures like nanopores, which serve as the foundation for this
+          study. These structures hold great potential for applications in
+          engineering and pharmaceutical research. <br /><br />
+          Nanopores refer to small channels or tubular structures on cell
+          membranes, typically measuring several nanometers in size, and have
+          been applied in sequencing technologies and analytical methods [5].
+          Recently, dynamic DNA nanopores have been reported, which enable the
+          control of permeable substances by altering the pore diameter.<br /><br />
+          In general, the flow rate through narrow tubular structures like
+          nanopores is defined by Poiseuille's Law[6]. According to this law,
+          the volume of fluid flowing per unit time is proportional to the
+          radius of the pore and inversely proportional to the length of the
+          tube. Although novel DNA nanopores capable of dynamically controlling
+          both the pore radius and tube length hold promise for unprecedented
+          applications, they have yet to be realized.
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+      <div class="row my-2">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <img src="images/back_for1.png" class="img-fluid w-100" />
+          <p style="text-align: center; margin-bottom: 0%">
+            Formula 1: Poiseuille's Law.
+            <br />
+          </p>
+          <p style="font-size: 13px; text-align: center">
+            It describes the flow rate of a viscous fluid (such as water or air)
+            through a narrow cylindrical tube.
+          </p>
         </div>
         <div class="col-md-2"></div>
       </div>
@@ -149,28 +194,110 @@
       <div class="row">
         <div class="col-md-2"></div>
         <div class="col-md-8">
-          <div class="fw-bold fs-4 mt-4 title-margin">
-            Problem &amp; Solution
-          </div>
+          <div class="fw-bold fs-4 mt-4 title-margin">Our solution</div>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+
+      <div class="row mb-2">
+        <div class="col-md-2"></div>
+        <div class="col-md-4 border-top border-2 top-line">
+          <p class="fs-4 mt-3 hleft-line">Kresling pattern</p>
+        </div>
+        <div class="col-md-4 border-top border-2 top-line"></div>
+        <div class="col-md-2"></div>
+      </div>
+
+      <div class="row mb-2">
+        <div class="col-md-2"></div>
+        <div class="col-md-4">
+          The core framewor4 of KIT-D was constructed by arranging a series of
+          parallelograms composed of two opposing triangles. A unique aspect of
+          Kresling folding is that the angle of each small triangle and the
+          angle that the parallelogram composes with the base impact key
+          structural characteristics. Specifically, the length of the inner
+          diameter is influenced by the external angle at the parallelogram's
+          base, which is represented as x in figure 2. The smaller triangle
+          angle, shown as y in figure 2, also dictates the shape of the outer
+          perimeter. For example, an isosceles triangle yields a regular
+          polygon. For a triangle with a smaller angle of n°, the outer
+          perimeter will form a polygon with 180/n number of sides. Based on
+          these principles, the smaller angle was set to 30°, with the
+          parallelogram's external angle close to 120°.
+        </div>
+
+        <div class="col-md-5">
+          <img src="images/back_fig1.png" class="img-fluid w-100" />
+          <p style="text-align: center; margin-bottom: 0%">
+            Figure. 1 Feature of kresling pattern.<br />
+          </p>
+          <p style="font-size: 13px; text-align: center">
+            (a) Isosceles triangles are twisted and arranged on the sides of the
+            cylinder. <br />
+            (b) The height of the structure changes as it transforms in a
+            twisting motion. <br />
+            (c) The difference in inner diameter between open-form and
+            closed-form. <br />
+          </p>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+
+      <div class="row mb-2">
+        <div class="col-md-2"></div>
+        <div class="col-md-4">
+          <p class="fs-4 mt-3 hleft-line">Kresling pattern</p>
+        </div>
+        <div class="col-md-4"></div>
+        <div class="col-md-2"></div>
+      </div>
+
+      <div class="row mb-2">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          In this project, we propose the Kresling-Inspired-Tube DNA Origami
+          (KIT-D), which leverages features beyond those inherent to the
+          Kresling pattern. This innovative structure is designed to function
+          not only as a single-layer configuration but also as a multi-layered
+          assembly. In this study, we focus on constructing a single-layer
+          structure, the fundamental unit of the Kresling pattern (Fig. 2). The
+          KIT-D developed in this work introduces a novel capability, enabling
+          simultaneous variation of both "inner diameter" and "length," a
+          feature challenging to achieve with conventional techniques. This
+          adaptability offers the potential for KIT-D to transform its structure
+          in response to a broader range of conditions and applications,
+          significantly enhancing its versatility and practical utility.
+        </div>
+
+        <div class="col-md-2"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-4">
+          <video autoplay width="250">
+            <source src="/movies/01_open_top.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="col-md-4">
+          <video autoplay width="250">
+            <source src="/movies/02_open_side.mp4" type="video/mp4" />
+          </video>
         </div>
         <div class="col-md-2"></div>
       </div>
 
       <div class="row">
         <div class="col-md-2"></div>
-        <div
-          class="col-md-8 text-break mb-2 d-block justify-content-center border-top border-2 top-line"
-        >
-          今回の構造体は「径」と「長さ」の両方を動的に制御できる。これは、過去のnanoporeといった人工的な筒状構造と比較して、適応性に優れている。この構造体KIT-Dは様々な環境に適応する必要がある医療分野、ひいては実社会においてDNAナノテクノロジーの実用化を促進することを期待している。<br /><br />
-          <!--         
-           <video
-            src="./movies/project1.mp4"
-            class="w-100 pb-3"
-            muted
-            autoplay
-            loop
-          ></video>
-      -->
+        <div class="col-md-4">
+          <video autoplay width="250">
+            <source src="/movies/03_close_top.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="col-md-4">
+          <video autoplay width="250">
+            <source src="/movies/04_close_side.mp4" type="video/mp4" />
+          </video>
         </div>
         <div class="col-md-2"></div>
       </div>
