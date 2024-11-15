@@ -59,6 +59,8 @@ document.addEventListener("DOMContentLoaded", () => {
   controls.dampingFactor = 0.05;
   controls.enableZoom = true;
   controls.enableRotate = true;
+  controls.maxZoom = 10.0;
+  controls.minZoom = 1.0;
 
   // Hexagon Group
   const hexagonGroup = new THREE.Group();
