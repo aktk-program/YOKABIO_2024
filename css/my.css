@@ -17,8 +17,8 @@ body {
   height: 100%; /* 高さを100%に設定 */
   margin: 0;
   margin-top: 56px;
-  margin-bottom: 60px;
   font-family: "Noto Sans JP";
+  background-color: #e4fffc;
 }
 
 /*ナブバー記述
@@ -360,7 +360,7 @@ a {
   content: "←"; /* 擬似要素を表示 */
   position: absolute; /* 絶対位置で配置 */
   top: 50%; /* 縦中央に配置 */
-  left: -7%; /* 左に10pxずらす */
+  left: -30px; /* 左に10pxずらす */
   width: 20px; /* 幅 */
   height: 27px; /* 高さ */
   transform: translateY(-50%); /* 縦方向で中央に位置を調整 */
