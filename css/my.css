@@ -381,3 +381,7 @@ a {
   height: 24vw;
   object-fit: cover;
 }
+
+.lege-border {
+  border-bottom: 0.1rem dashed;
+}
