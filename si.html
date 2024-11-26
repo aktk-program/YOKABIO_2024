@@ -112,8 +112,8 @@
       <div class="row">
         <div class="col-md-1"></div>
         <div class="col-md-10">
-          <div class="fs-2 fw-bold hline mx-auto mt-2" id="ds">
-            Supporting Information<br />Appendix
+          <div class="fs-2 fw-bold hline mx-auto" id="ds">
+            Supporting Information
           </div>
         </div>
         <div class="col-md-1"></div>
@@ -122,7 +122,7 @@
         <div class="col-md-1"></div>
         <div class="col-md-10">
           <div class="fs-3 mt-3 title-margin fw-bold" id="design">
-            Section1. Simulation for Validating the Soundness of the Design
+            Material and Methods
           </div>
         </div>
         <div class="col-md-1"></div>
@@ -140,111 +140,47 @@
       <div class="row mb-4">
         <div class="col-md-1"></div>
         <div class="col-md-10">
-          <p class="fs-4 mt-3 hleft-line">routing</p>
-          I conducted routing of the scaffold strand in the wireframe structure
-          under the following conditions: <br />
-          ・The scaffold strand passes through every edge. <br />
-          ・The scaffold strand passes through each edge only once.<br />
-          ・Ensure that the DNA strands connecting the edges of the mesh do not
-          cross. <br />・In cases where the above conditions cannot be met, if
-          necessary, the scaffold strand passes through one edge twice. A
-          double-pass edge is referred to as a 'double edge.' <br />For routing,
-          I utilized software employed in previous research [1].<br />
+          <p class="fs-4 mt-3 hleft-line">Structure design</p>
+          <p class="mb-3">
+            The design was performed using the square lattice version on the
+            software caDNAno(
+            <a href="https://cadnano.org" style="text-decoration: underline"
+              >https://cadnano.org</a
+            >
+            ). Since KIT-D designed on caDNAno was 7535 bases long, M13mp18
+            single-strand with a length of 7560 bases was selected as the
+            scaffold strand, and only 25 bases were left over. The total number
+            of staple strands used in the KIT-D construct was 250, both with and
+            without latches, and were designed with the assumption that six
+            identical single-stranded DNA "close" strands would be added to them
+            in order to transform them into the closed form. A file containing
+            the detailed positions and sequences of these designs can be
+            obtained from the following json file.
+          </p>
+          <a href="images/close_latch9.json" style="text-decoration: underline"
+            >close_latch9.json<br /></a
+          ><a
+            href="images/close_latch12.json"
+            style="text-decoration: underline"
+            >close_latch12.json<br /></a
+          ><a
+            href="images/close_latch15.json"
+            style="text-decoration: underline"
+            >close_latch15.json<br /></a
+          ><a
+            href="images/close_latch21.json"
+            style="text-decoration: underline"
+            >close_latch21.json<br /></a
+          ><a
+            href="images/file30_withoutlatch.json"
+            style="text-decoration: underline"
+            >file30_withoutlatch.json<br
+          /></a>
           <a
-            href="https://github.com/mohamma1/bscor"
+            href="images/KIT-D_sequences.xlsx"
             style="text-decoration: underline"
-            >https://github.com/mohamma1/bscor</a
-          >
-
-          <img
-            src="./images/sifig1.png"
-            class="d-block mx-auto"
-            style="max-width: 600px; width: 100%"
-          />
-          <p style="text-align: center">
-            Fig.1 The path of scaffold strands in the rhombic dodecahedron
-            wireframe structure guided by routing
-          </p>
-          <p style="text-align: center; font-size: 13px">
-            This figure was generated using the 4vHelix software, as mentioned
-            later, rather than the previously mentioned bscor software. The
-            white lines indicate the path of the scaffold strands.
-          </p>
-          <p class="fs-4 mt-3 hleft-line">Strengthening the Edges</p>
-          The edges of the wireframe structure, which is formed by adding staple
-          strands to the routed structure, are composed of one or two DNA double
-          helices. In this state, it is conceivable that the edges may deform
-          during structural transformations, preventing the desired deformation
-          as per the design. Therefore, to make the wireframe structure more
-          robust and able to withstand deformations, each edge was transformed
-          into a 4 Helix Bundle. The edge reinforcement was carried out through
-          the following steps: <br />Step 1. Adding a loop of the scaffold
-          strand to all edges (adding the second and third helices). <br />Step
-          2. Adding short scaffold strands (miniscaffold) to the edges other
-          than double edges (adding the fourth helix). Miniscaffold is not
-          required for double edges, as they already have two passes of the
-          scaffold strand. Edge reinforcement was accomplished using the
-          software developed by the authors of Reference 2.<br />
-          <a
-            href="https://github.com/marlol4/4vHelix"
-            style="text-decoration: underline"
-            >https://github.com/marlol4/4vHelix</a
-          >
-
-          <p class="fs-4 mt-3 hleft-line">
-            Closing corners using strand displacement
-          </p>
-          To close the corners, the fastening-DNA extending from the edges must
-          grow towards the neighboring edges. We verified the phase of DNA
-          double helices on caDNAno and designed the fastening-DNA to extend
-          from the appropriate positions. Multiple strands of fastening-DNA
-          extend from a single edge. The sequence of fastening-DNA was
-          determined to ensure that binding does not occur among the
-          fastening-DNA extending from the same edge.
-          <p class="fs-4 mt-3 hleft-line">
-            The number of base pairs required for the mobility of edges
-          </p>
-          The required length 'l' of the hinge necessary to close the corners of
-          the structure was determined using the following equation.<br />
-          <br />
-          Assuming a distance 'Δh' of 3 nm between the double helices and aiming
-          to close the angle 'θ' up to 30°, we find that 'l' equals 2.8977...
-          nm. The hinge is designed as single-stranded DNA (ssDNA). Considering
-          a length of 0.7 nm per ssDNA nucleotide, the minimum number of
-          nucleotides needed for the hinge is 5.
-          <p class="fs-4 mt-3 hleft-line">The designed file</p>
-          The ultimate design file<br />
-          <a
-            href="./data/VertexSwitcher.json"
-            download
-            style="text-decoration: underline"
-            >VertexSwitcher_structure.json download</a
-          ><br /><a
-            href="./data/VertexSwitcher_sequence.xlsx"
-            download
-            style="text-decoration: underline"
-          >
-            VertexSwithcer_sequence.xlsx download</a
-          >
-        </div>
-        <div class="col-md-1"></div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-1"></div>
-        <div class="col-md-10">
-          <div class="fs-3 mt-3 title-margin fw-bold" id="section2">
-            Section2. Simulation for Validating the Design
-          </div>
-        </div>
-        <div class="col-md-1"></div>
-      </div>
-      <div class="row">
-        <div class="col-md-1"></div>
-        <div class="col-md-10">
-          <div
-            class="fs-6 text-break mb-2 d-block justify-content-center border-top border-2 top-line"
-          ></div>
+            >KIT-D_sequences.xlsx<br
+          /></a>
         </div>
         <div class="col-md-1"></div>
       </div>
@@ -252,144 +188,155 @@
       <div class="row mb-4">
         <div class="col-md-1"></div>
         <div class="col-md-10">
-          <p class="fs-4 mt-3 hleft-line">Simulation using oxDNA</p>
-          The confirmation of structural stability was performed using oxDNA, a
-          software for coarse-grained molecular dynamics simulations. The
-          simulation consists of four main steps. First, a Rigid-body simulation
-          is used to roughly shape the structures designed in caDNAno.
-          Subsequently, short-time calculations known as MC relaxation and MD
-          relaxation are carried out to alleviate any structural strains.
-          Finally, the MD simulation is employed to calculate the temporal
-          evolution of the structure.
-          <img src="./movies/sifig2.gif" class="d-block mx-auto img-fluid" />
-          <p style="text-align: center">
-            Fig.2 MD Simulation of the 10nt Hinge Intermediate
-          </p>
-          <a
-            href="./data/input_MD_intermediate"
-            download
+          <p class="fs-4 mt-3 hleft-line">Coarse-grained simulation</p>
+          The structure for simulation was obtained in oxDNA format by
+          converting the json files output from caDNAno using theweb-based
+          tacoxDNA(<a
+            href="http://tacoxdna.sissa.it/"
             style="text-decoration: underline"
-            >Intermediate MD Simulation Input File</a
-          >
+            >http://tacoxdna.sissa.it/</a
+          >). The structure was then loaded into theweb-based oxView(<a
+            href="https://oxdna.org/static/oxdna-viewer/index.html"
+            style="text-decoration: underline"
+            >https://oxdna.org/static/oxdna-viewer/index.html</a
+          >) and relaxed using rigid body simulations. A two-stage relaxation
+          and molecular dynamics simulation was then performed using a local
+          version of oxDNA. The first stage of the relaxation calculations was a
+          Monte Carlo (MC) simulation using steps, performed at a temperature of
+          5°C. The second stage was a molecular dynamics (MD) simulation.
+          Temperature 5 deg.<br /><br />
+          Time step (dt) 0.02, 1e6step In the subsequent molecular dynamics
+          simulation, 1e8 steps were performed at a temperature of 25°C and time
+          step (dt) 0.001. The simulation state was saved every 1e6 steps.
+        </div>
+        <div class="col-md-1"></div>
+      </div>
 
-          <p class="fs-4 mt-3 hleft-line">Stability Assessment by RMSF</p>
-          We calculated the RMSF (Root Mean Square of Fluctuation) values based
-          on the data obtained from oxDNA simulations to assess stability. RMSF
-          quantifies the fluctuations of particles derived from MD simulations,
-          representing the deviation (standard deviation) of each particle from
-          its average position. We developed a Python program that converts RMSF
-          values into a color map, allowing for visual assessment based on the
-          magnitude of RMSF.<br />
-          <a href="./data/RMSF.py" download style="text-decoration: underline"
-            >python file download</a
+      <div class="row mb-4">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <p class="fs-4 mt-3 hleft-line">Other RMSF</p>
+          RMSF data for each designed latch length KIT-D structure.
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+
+      <div class="row mb-4">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <div class="row">
+            <div class="col-md-3">
+              <img src="images/rmsf_9nt.png" class="img-fluid w-75" />
+              <p style="font-size: 13px">9latch</p>
+            </div>
+            <div class="col-md-3">
+              <img src="images/rmsf_12.png" class="img-fluid w-75" />
+              <p style="font-size: 13px">12latch</p>
+            </div>
+            <div class="col-md-3">
+              <img src="images/rmsf_15.png" class="img-fluid w-75" />
+              <p style="font-size: 13px">15latch</p>
+            </div>
+            <div class="col-md-3">
+              <img src="images/rmsf_21.png" class="img-fluid w-75" />
+              <p style="font-size: 13px">21latch</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <p class="fs-4 mt-3 hleft-line">
+            Preparation of DNA origami structures
+          </p>
+          Samples were prepared by mixing 15 µL of 400 nM staple strands, 6 µL
+          of 100 nM scaffold strands, 6 μL of 10&times; folding buffer which
+          consist of 10&times; TE buffer and ten times the final salt
+          concentration, the rest with MilliQ for a total of 60 μL. For samples
+          with salt concentrations with Na⁺ only, Instead of the 10&times;
+          folding buffer, 10&times; TE buffer and the right amount of 5M NaCl
+          solution were added.
+          <br />Annealing was performed by using Biometra TOne thermal cycler,
+          with 60 µL samples aliquoted to three 20 µL samples. During the
+          annealing cycle, the samples were first heated to 85 °C, and then
+          cooled to 65 °C in 5 minutes, then cooled to 60 °C in 15 minutes, 44
+          °C with -1 °C/hr, and to 4 °C with -1 °C/min. After annealing is
+          complete, the 20 µL samples were combined to one 60 µL sample.<br />
+          Purification of the samples were done with MicroSpin S-300 HR Columns.
+          Purification gels were set in the columns in advance. First the
+          columns were mixed using a vortex, and then the bottom closure was
+          twisted off and the cap was loosened one-quarter. The column was set
+          onto a 1.5 mL tube and was centrifuged for 800&times;g for 1 minute.
+          100 µL of buffer with the same composition as the sample was loaded
+          onto the column and centrifuged at 800&times;g for 1 minute.repeat
+          this process twice, and then change the 1.5 mL microtube to a new one
+          for retrieval. 50 µL samples were added and were left still for 2
+          minutes. The output was collected, and its concentration was measured
+          using nanoDrop, and then were compared using agarose gel
+          electrophoresis.
+          <br /><br />
+          size-exclusion chromatography<br />
+          <a
+            href="https://www.cytivalifesciences.com/en/us/shop/molecular-and-immunodiagnostics/pcr-cleanup-and-size-selection/illustra-microspin-s-300-hr-columns-p-00201?srsltid=AfmBOop_uyKTvATuz49x159aQhJ5j8zPYRf7Nr226Uw-0sIr3QPj9Hcd"
+            style="text-decoration: underline"
+            >https://www.cytivalifesciences.com/en/us/shop/molecular-and-immunodiagnostics/pcr-cleanup-and-size-selection/illustra-microspin-s-300-hr-columns-p-00201?srsltid=AfmBOop_uyKTvATuz49x159aQhJ5j8zPYRf7Nr226Uw-0sIr3QPj9Hcd</a
           >
         </div>
         <div class="col-md-1"></div>
+      </div>
 
-        <div class="row">
-          <div class="col-md-1"></div>
-          <div class="col-md-10">
-            <div class="fs-3 mt-3 title-margin fw-bold" id="section3">
-              Section3. Examination of Structural Formation Methods
-            </div>
-          </div>
-          <div class="col-md-1"></div>
+      <div class="row mb-4">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <p class="fs-4 mt-3 hleft-line">
+            Agarose gel electrophoresis analysis
+          </p>
+          For the agarose gel electrophoresis (AGE) analysis, a 1% agarose gel
+          (KANTO, Japan) was prepared using 0.5X TBE buffer with an additional 5
+          mM MgCl2. The same buffer solution (0.5X TBE with 5 mM MgCl2) was used
+          as the running buffer. Electrophoresis was conducted at 50 V for 2
+          hours at 4˚C. A 1 kb DNA Ladder (TaKaRa, Japan) was included as a
+          reference. After electrophoresis, the gel was stained using SYBR Gold
+          (Thermo Fisher Scientific, United States) and visualized with the
+          WSE-6100H LuminoGraph I (ATTO, Japan).
         </div>
-        <div class="row">
-          <div class="col-md-1"></div>
-          <div class="col-md-10">
-            <div
-              class="fs-6 text-break mb-2 d-block justify-content-center border-top border-2 top-line"
-            ></div>
-            <p class="fs-4 mt-3 hleft-line">
-              Electrophoresis Results of Structures Generated by Annealing
-              Protocol 2
-            </p>
-            We present the agarose gel electrophoresis results of structures
-            generated by Annealing Protocol 2 in Figure 3.
-            <img
-              src="./images/sifig3.png"
-              class="d-block mx-auto"
-              style="max-width: 600px; width: 100%"
-            />
-            <p style="text-align: center">
-              Fig.3 The Electrophoresis Results of Structures Generated by
-              Annealing Protocol 2
-            </p>
-            The band with a MgCl2 concentration of 17.5mM is prominently
-            visible. Annealing Protocol 2 is a universally applicable annealing
-            protocol for 3D DNA origami, and, in practice, we proceeded with
-            experiments using Annealing Protocol 1, which is likely to be more
-            optimized.
-            <p class="fs-4 mt-3 hleft-line">
-              The Agarose Gel Electrophoresis Results After Purification by
-              Ultrafiltration
-            </p>
-            Illustrated in Figure 4 is the agarose gel electrophoresis result
-            following purification by ultrafiltration.
-            <img
-              src="./images/sifig4.png"
-              class="d-block mx-auto"
-              style="max-width: 600px; width: 100%"
-            />
-            <p style="text-align: center">
-              Fig.4 The Electrophoresis Results After Purification by
-              Ultrafiltration
-            </p>
-            It is evident that not only the intended structures but also some of
-            the staples responsible for forming the target structure have been
-            removed. This could be attributed to the high salt concentration,
-            which is believed to have resulted in a low yield through
-            ultrafiltration. In the subsequent experiment, purification was
-            carried out using gel extraction.
-          </div>
-          <div class="col-md-1"></div>
+        <div class="col-md-1"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <p class="fs-4 mt-3 hleft-line">
+            Polyacrylamide gel electrophoresis analysis
+          </p>
+          For polyacrylamide gel electrophoresis (PAGE), the gel was prepared
+          with a composition of 15% (w/v) acrylamide/bis (29:1) solution
+          (Nakalai Tesque, Japan), 1X TBE buffer, and 5 mM MgCl2. The running
+          buffer used was 1X TBE supplemented with 5 mM MgCl2. Electrophoresis
+          was carried out at 100 V for 3 hours at 25˚C. The gel was stained with
+          SYBR Gold (Thermo Fisher Scientific, United States) and visualized
+          using the WSE-6100H LuminoGraph I (ATTO, Japan).
         </div>
-        <div class="row mt-5">
-          <div class="col-md-1"></div>
-          <div class="col-md-10">
-            <div class="fs-2 fw-bold hline mx-auto" id="mm">
-              Material &amp; Methods
-            </div>
-          </div>
-          <div class="col-md-1"></div>
+        <div class="col-md-1"></div>
+      </div>
+
+      <div class="row mb-4">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <p class="fs-4 mt-3 hleft-line">TEM imaging</p>
+          For transmission electron microscopy (TEM) imaging, elastic carbon
+          grids (ELS-C10 STEM Cu100P, Okenshoji, Japan) were used. A 3 μL sample
+          solution was applied to the TEM grid and allowed to incubate for 5
+          minutes at room temperature. The structures were then stained with 1%
+          (w/v) aqueous uranyl acetate for 5 minutes. After staining, the grids
+          were washed three times with ultrapure water, and excess liquid was
+          removed with filter paper. Imaging was performed using a Tecnai G2
+          Spirit (FEI, United States) operating at 120 kV.
         </div>
-        <div class="row">
-          <div class="col-md-1"></div>
-          <div class="col-md-10">
-            <img
-              src="./images/sifig5.png"
-              class="d-block mx-auto"
-              style="max-width: 600px; width: 100%"
-            />
-            <p style="text-align: center">
-              Fig.5 The Composition of the Solution Preparation
-            </p>
-            <img
-              src="./images/sifig6.png"
-              class="d-block mx-auto"
-              style="max-width: 600px; width: 100%"
-            />
-            <p style="text-align: center">Fig.6 Annealing Control</p>
-            <img
-              src="./images/sifig7.png"
-              class="d-block mx-auto"
-              style="max-width: 600px; width: 100%"
-            />
-            <p style="text-align: center">
-              Fig.7 The Composition of Agarose Gel
-            </p>
-            <img
-              src="./images/sifig8.png"
-              class="d-block mx-auto"
-              style="max-width: 600px; width: 100%"
-            />
-            <p style="text-align: center">
-              Fig.8 The Composition of Polyacrylamide Gel
-            </p>
-          </div>
-          <div class="col-md-1"></div>
-        </div>
+        <div class="col-md-1"></div>
       </div>
     </div>
     <!--footer-->
